@@ -7,7 +7,7 @@ using Tomlyn.Model;
 
 public class KeyHandler : MonoBehaviour
 {
-    private Dictionary<string, KeyCode> keyBinds = new Dictionary<string, KeyCode>();
+    private static int DefaultKeyCount = 4 * 2; // 2 keybinds / action
     private string filePath;
     
     private void Awake()
@@ -16,52 +16,58 @@ public class KeyHandler : MonoBehaviour
         LoadKeyBinds();
     }
 
-    private void LoadKeyBinds()
+    private Dictionary<string, KeyCode> LoadKeyBinds()
     {
-        if (File.Exists(filePath))
+        Dictionary<string, KeyCode> tempKeyBinds = new Dictionary<string, KeyCode>();
+        if (Globals.keyBinds.Count == 0 || File.Exists(filePath))
         {
             string tomlContent = File.ReadAllText(filePath);
             TomlTable table = Toml.ToModel(tomlContent);
             foreach (var key in table.Keys)
             {
-                keyBinds[key] = (KeyCode)System.Enum.Parse(typeof(KeyCode), table[key].ToString());
+                tempKeyBinds[key] = (KeyCode)System.Enum.Parse(typeof(KeyCode), table[key].ToString());
             }
         }
         else
         {
             // Defa binds
-            keyBinds["Left_0"] = KeyCode.A;
-            keyBinds["Left_1"] = KeyCode.LeftArrow;
+            tempKeyBinds["Left_0"] = KeyCode.A;
+            tempKeyBinds["Left_1"] = KeyCode.LeftArrow;
 
-            keyBinds["Forwards_0"] = KeyCode.W;
-            keyBinds["Forwards_1"] = KeyCode.UpArrow;
+            tempKeyBinds["Forwards_0"] = KeyCode.W;
+            tempKeyBinds["Forwards_1"] = KeyCode.UpArrow;
 
-            keyBinds["Right_0"] = KeyCode.D;
-            keyBinds["Right_1"] = KeyCode.RightArrow;
+            tempKeyBinds["Right_0"] = KeyCode.D;
+            tempKeyBinds["Right_1"] = KeyCode.RightArrow;
 
-            keyBinds["Down_0"] = KeyCode.S;
-            keyBinds["Down_1"] = KeyCode.DownArrow;
+            tempKeyBinds["Down_0"] = KeyCode.S;
+            tempKeyBinds["Down_1"] = KeyCode.DownArrow;
 
             // .... more
 
-            SaveKeyBinds();
+            SaveKeyBinds(tempKeyBinds);
         }
+        return tempKeyBinds;
     }
 
-    private void SaveKeyBinds()
+    private bool SaveKeyBinds(Dictionary<string, KeyCode> keys)
     {
         TomlTable table = new TomlTable();
-        foreach (var key in keyBinds)
+        foreach (var key in keys)
         {
             table[key.Key] = key.Value.ToString();
         }
         string tomlContent = Toml.FromModel(table);
         File.WriteAllText(filePath, tomlContent);
+        return File.Exists(filePath);
     }
-    /// <summary>
-    /// élkél
-    /// </summary>
-    public void valami() { }
+
+
+    public void SetKeyBind(string action, KeyCode key)
+    {
+        Globals.keyBinds[action] = key;
+    }
+
     void Start()
     {
         

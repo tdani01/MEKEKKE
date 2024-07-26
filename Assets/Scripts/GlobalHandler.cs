@@ -21,5 +21,5 @@ public static class Story { }
 
 public static class Minigame { }
 public static class Globals {
-    
+    public static Dictionary<string, KeyCode> keyBinds = new Dictionary<string, KeyCode>();
 }
