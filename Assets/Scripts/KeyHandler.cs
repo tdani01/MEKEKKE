@@ -43,6 +43,12 @@ public class KeyHandler : MonoBehaviour
             tempKeyBinds["Down_0"] = KeyCode.S;
             tempKeyBinds["Down_1"] = KeyCode.DownArrow;
 
+            tempKeyBinds["Jump_0"] = KeyCode.Space;
+            tempKeyBinds["Jump_1"] = KeyCode.Return;
+
+            tempKeyBinds["Toggle_Walk_0"] = KeyCode.LeftShift;
+            tempKeyBinds["Toggle_Walk_1"] = KeyCode.RightShift;
+
             // .... more
 
             SaveKeyBinds(tempKeyBinds);
@@ -66,6 +72,16 @@ public class KeyHandler : MonoBehaviour
     public void SetKeyBind(string action, KeyCode key)
     {
         Globals.keyBinds[action] = key;
+    }
+
+    public KeyCode GetKeyBind(string action)
+    {
+        return Globals.keyBinds[action];
+    }
+
+    public string GetKeyBindString(string action)
+    {
+        return Globals.keyBinds[action].ToString();
     }
 
     void Start()
