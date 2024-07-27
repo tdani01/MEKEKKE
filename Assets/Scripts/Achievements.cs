@@ -43,7 +43,10 @@ public class Achievement
     /// </summary>
     public void Lock() { isUnlocked = false; }
 }
-
+/// <summary>
+/// Achievement manager class. Usage:
+/// public class AchievementManager.instance.(function)
+/// </summary>
 public class AchievementManager : MonoBehaviour
 {
     public static AchievementManager instance { get; private set; }
@@ -79,7 +82,7 @@ public class AchievementManager : MonoBehaviour
     /// <summary>
     /// Creates a new entry if id is not in the list already
     /// </summary>
-    /// <param name="id"></param>
+    /// <param name="part">Part (map) id of the achievement</param>
     /// <param name="title"></param>
     /// <param name="description"></param>
     /// <param name="iconPath"></param>
@@ -94,7 +97,10 @@ public class AchievementManager : MonoBehaviour
             SaveAchievemntsToConfig();
         }
     }
-
+    /// <summary>
+    /// Unlocks and achievement by id
+    /// </summary>
+    /// <param name="id">Id of the achievement.     Example: "A1-001"</param>
     public void UnlockAchievement(string id)
     {
         if (achievements.ContainsKey(id) && !achievements[id].isUnlocked)
@@ -147,7 +153,11 @@ public class AchievementManager : MonoBehaviour
             var achievement = new Achievement(id, title, description, iconPath, score) { isUnlocked = isUnlocked };
         }
     }
-
+    /// <summary>
+    /// Gets an Achievement by its id. Example GetAchievement("A1-001")
+    /// </summary>
+    /// <param name="id">Id of the achievement</param>
+    /// <returns>Returns the Achievement object</returns>
     public Achievement? GetAchievement(string id) => achievements.ContainsKey(id) ? achievements[id] : null;
 
     private void UpdateCompletedAchievementsInSave(string id)
@@ -168,3 +178,4 @@ public class AchievementManager : MonoBehaviour
         File.WriteAllText(Globals.saveFilePath, Toml.FromModel(toml));
     }
 }
+
