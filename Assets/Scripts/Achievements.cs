@@ -50,7 +50,7 @@ public class AchievementManager : MonoBehaviour
     private Dictionary<string, Achievement> achievements = new Dictionary<string, Achievement>();
 
     private Dictionary<int, int> partCounters = new Dictionary<int, int>();
-    private string configFilePath = "achievements_cfg.toml";
+    private string configFilePath = Path.Combine(Application.persistentDataPath, "achievements_cfg.toml");
 
 
     private void Awake()

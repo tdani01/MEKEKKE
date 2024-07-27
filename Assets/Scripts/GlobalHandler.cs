@@ -5,6 +5,7 @@ using UnityEngine;
 using Tomlyn;
 using Tomlyn.Model;
 using UnityEngine.SocialPlatforms.Impl;
+using System.IO;
 
 public class GlobalHandler : MonoBehaviour
 {    
@@ -37,5 +38,5 @@ public static class Globals {
     public static List<MiniGames> completedMinigames = new List<MiniGames>();
     public static int Points = 0;
     public static TomlTable userSettings;
-    public static string saveFilePath = $"{SaveName}-{SaveCount}.toml";
+    public static string saveFilePath = Path.Combine(Application.persistentDataPath, $"{SaveName}-{SaveCount}.toml");
 }
