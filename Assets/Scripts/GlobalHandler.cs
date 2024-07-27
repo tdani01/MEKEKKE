@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Tomlyn;
 using Tomlyn.Model;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class GlobalHandler : MonoBehaviour
 {    
@@ -24,12 +25,17 @@ public static class Story { }
 
 public static class Minigame { }
 public static class Globals {
-    public static Dictionary<string, KeyCode> keyBinds = new Dictionary<string, KeyCode>();
-    public static Dictionary<string, KeyCode> joyStick = new Dictionary<string, KeyCode>();
-    public static int Points = 0;
-    public static TomlTable userSettings;
     public enum MiniGames
     {
         count
     }
+    public static string SaveName = "Unnamed";
+    public static int SaveCount = 0;
+    public static int KeepSaveCount = 3;
+    public static Dictionary<string, KeyCode> keyBinds = new Dictionary<string, KeyCode>();
+    public static Dictionary<string, KeyCode> joyStick = new Dictionary<string, KeyCode>();
+    public static List<MiniGames> completedMinigames = new List<MiniGames>();
+    public static int Points = 0;
+    public static TomlTable userSettings;
+    public static string saveFilePath = $"{SaveName}-{SaveCount}.toml";
 }
