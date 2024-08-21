@@ -54,13 +54,13 @@ public class KeyHandler : MonoBehaviour
         if (loadedKeyMap == null)
         {
             KeyMap keybinds = new KeyMap();
-            keybinds.keymap[KeyAction.m_Forward]    = new KeyCode[2] { KeyCode.W,       KeyCode.UpArrow };
-            keybinds.keymap[KeyAction.m_Back]       = new KeyCode[2] { KeyCode.S,       KeyCode.DownArrow };
-            keybinds.keymap[KeyAction.m_Left]       = new KeyCode[2] { KeyCode.A,       KeyCode.LeftArrow };
-            keybinds.keymap[KeyAction.m_Right]      = new KeyCode[2] { KeyCode.D,       KeyCode.RightArrow };
-            keybinds.keymap[KeyAction.m_Jump]       = new KeyCode[2] { KeyCode.Space,   KeyCode.None };
-            keybinds.keymap[KeyAction.i_Interact]   = new KeyCode[2] { KeyCode.E,       KeyCode.None };
-            keybinds.keymap[KeyAction.i_Back]       = new KeyCode[2] { KeyCode.Escape,  KeyCode.None };
+            keybinds.keymap[KeyAction.m_Forward]    = new KeyCode[2] { KeyCode.W,       KeyCode.UpArrow     };
+            keybinds.keymap[KeyAction.m_Back]       = new KeyCode[2] { KeyCode.S,       KeyCode.DownArrow   };
+            keybinds.keymap[KeyAction.m_Left]       = new KeyCode[2] { KeyCode.A,       KeyCode.LeftArrow   };
+            keybinds.keymap[KeyAction.m_Right]      = new KeyCode[2] { KeyCode.D,       KeyCode.RightArrow  };
+            keybinds.keymap[KeyAction.m_Jump]       = new KeyCode[2] { KeyCode.Space,   KeyCode.None        };
+            keybinds.keymap[KeyAction.i_Interact]   = new KeyCode[2] { KeyCode.E,       KeyCode.None        };
+            keybinds.keymap[KeyAction.i_Back]       = new KeyCode[2] { KeyCode.Escape,  KeyCode.None        };
 
             SaveMap(keybinds);
 
@@ -76,8 +76,8 @@ public class KeyHandler : MonoBehaviour
         public Dictionary<KeyAction, KeyCode[]> keymap = new Dictionary<KeyAction, KeyCode[]>();
     }
 
-    public bool GetKeyDown(KeyAction key) { return Input.GetKeyDown(loadedKeyMap.keymap[key][0]) || Input.GetKeyDown(loadedKeyMap.keymap[key][1]); }
-    public bool GetKeyUp(KeyAction key) { return Input.GetKeyUp(loadedKeyMap.keymap[key][0]) || Input.GetKeyUp(loadedKeyMap.keymap[key][1]); }
+    public bool GetKeyDown(KeyAction key)   { return Input.GetKeyDown(loadedKeyMap.keymap[key][0])  || Input.GetKeyDown(loadedKeyMap.keymap[key][1]);   }
+    public bool GetKeyUp(KeyAction key)     { return Input.GetKeyUp(loadedKeyMap.keymap[key][0])    || Input.GetKeyUp(loadedKeyMap.keymap[key][1]);     }
 
     public KeyMap LoadMap()
     {
