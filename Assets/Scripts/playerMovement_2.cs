@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpingPower = 12f;
     private bool isFacingRight = true;
 
+    private bool isCrouching = false;
     private int jumpCounter;
     private Collider2D platformCollider;
     [SerializeField] private bool isDoubleJump = false;

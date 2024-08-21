@@ -2,95 +2,148 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
-using Tomlyn;
-using Tomlyn.Model;
+using System.Runtime.Serialization.Formatters.Binary;
+using UnityEditor;
+using System;
+using System.Xml;
 
 public class KeyHandler : MonoBehaviour
 {
-    private static int DefaultKeyCount = 4 * 2; // 2 keybinds / action
-    private string filePath;
-    
-    private void Awake()
+
+    public static KeyHandler Instance { get; private set; }
+    private string filepath = Path.Combine(Application.persistentDataPath, "keymap.dat");
+
+    private KeyMap loadedKeyMap;
+    public enum KeyAction
     {
-        filePath = Path.Combine(Application.persistentDataPath, "usersettings.toml");
-        LoadKeyBinds();
+        m_Forward,
+        m_Back,
+        m_Left,
+        m_Right,
+        m_Jump,
+        m_Crouch,
+        i_Interact,
+        i_Back
     }
 
-    private Dictionary<string, KeyCode> LoadKeyBinds()
+    public KeyCode[] getKeys(KeyAction action)
     {
-        Dictionary<string, KeyCode> tempKeyBinds = new Dictionary<string, KeyCode>();
-        if (Globals.keyBinds.Count == 0 || File.Exists(filePath))
+        return loadedKeyMap.keymap[action];
+    }
+
+    private void Awake()
+    {
+        if (Instance == null)
         {
-            string tomlContent = File.ReadAllText(filePath);
-            TomlTable table = Toml.ToModel(tomlContent);
-            foreach (var key in table.Keys)
-            {
-                tempKeyBinds[key] = (KeyCode)System.Enum.Parse(typeof(KeyCode), table[key].ToString());
-            }
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
-            // Defa binds
-            tempKeyBinds["Left_0"] = KeyCode.A;
-            tempKeyBinds["Left_1"] = KeyCode.LeftArrow;
-
-            tempKeyBinds["Forwards_0"] = KeyCode.W;
-            tempKeyBinds["Forwards_1"] = KeyCode.UpArrow;
-
-            tempKeyBinds["Right_0"] = KeyCode.D;
-            tempKeyBinds["Right_1"] = KeyCode.RightArrow;
-
-            tempKeyBinds["Down_0"] = KeyCode.S;
-            tempKeyBinds["Down_1"] = KeyCode.DownArrow;
-
-            tempKeyBinds["Jump_0"] = KeyCode.Space;
-            tempKeyBinds["Jump_1"] = KeyCode.Return;
-
-            tempKeyBinds["Toggle_Walk_0"] = KeyCode.LeftShift;
-            tempKeyBinds["Toggle_Walk_1"] = KeyCode.RightShift;
-
-            // .... more
-
-            SaveKeyBinds(tempKeyBinds);
+            Destroy(gameObject);
+            return;
         }
-        return tempKeyBinds;
+
+        LoadOrInitializeKeyMap();
     }
 
-    private bool SaveKeyBinds(Dictionary<string, KeyCode> keys)
+    private void LoadOrInitializeKeyMap()
     {
-        TomlTable table = new TomlTable();
-        foreach (var key in keys)
+        loadedKeyMap = LoadMap();
+
+        if (loadedKeyMap == null)
         {
-            table[key.Key] = key.Value.ToString();
+            KeyMap keybinds = new KeyMap();
+            keybinds.keymap[KeyAction.m_Forward]    = new KeyCode[2] { KeyCode.W,       KeyCode.UpArrow };
+            keybinds.keymap[KeyAction.m_Back]       = new KeyCode[2] { KeyCode.S,       KeyCode.DownArrow };
+            keybinds.keymap[KeyAction.m_Left]       = new KeyCode[2] { KeyCode.A,       KeyCode.LeftArrow };
+            keybinds.keymap[KeyAction.m_Right]      = new KeyCode[2] { KeyCode.D,       KeyCode.RightArrow };
+            keybinds.keymap[KeyAction.m_Jump]       = new KeyCode[2] { KeyCode.Space,   KeyCode.None };
+            keybinds.keymap[KeyAction.i_Interact]   = new KeyCode[2] { KeyCode.E,       KeyCode.None };
+            keybinds.keymap[KeyAction.i_Back]       = new KeyCode[2] { KeyCode.Escape,  KeyCode.None };
+
+            SaveMap(keybinds);
+
+            Debug.Log("Key map initialized!");
         }
-        string tomlContent = Toml.FromModel(table);
-        File.WriteAllText(filePath, tomlContent);
-        return File.Exists(filePath);
+        else
+            Debug.Log("Loaded existing key map");
     }
 
-
-    public void SetKeyBind(string action, KeyCode key)
+    [Serializable]
+    public class KeyMap
     {
-        Globals.keyBinds[action] = key;
+        public Dictionary<KeyAction, KeyCode[]> keymap = new Dictionary<KeyAction, KeyCode[]>();
     }
 
-    public KeyCode GetKeyBind(string action)
+    public bool GetKeyDown(KeyAction key) { return Input.GetKeyDown(loadedKeyMap.keymap[key][0]) || Input.GetKeyDown(loadedKeyMap.keymap[key][1]); }
+    public bool GetKeyUp(KeyAction key) { return Input.GetKeyUp(loadedKeyMap.keymap[key][0]) || Input.GetKeyUp(loadedKeyMap.keymap[key][1]); }
+
+    public KeyMap LoadMap()
     {
-        return Globals.keyBinds[action];
+        if (!File.Exists(filepath))
+        {
+            Debug.LogWarning("Keymap file not found"); // only if start has not run
+            return null;
+        }
+
+        try
+        {
+            using (FileStream fileStream = new FileStream(filepath, FileMode.Open))
+            {
+                BinaryFormatter formatter = new BinaryFormatter();
+                KeyMap loadedKeyMap = (KeyMap)formatter.Deserialize(fileStream);
+                Debug.Log("Keymap loaded successfully.");
+                return loadedKeyMap;
+            }
+        }
+        catch (System.Exception ex)
+        {
+            Debug.LogError($"Failed to load keymap: {ex.Message}");
+            return null;
+        }
     }
 
-    public string GetKeyBindString(string action)
+    public void SaveMap(KeyMap keyMap)
     {
-        return Globals.keyBinds[action].ToString();
+        if (!string.IsNullOrEmpty(filepath)) { return; } // throw error
+        try
+        {
+            using (FileStream fileStream = new FileStream(filepath, FileMode.Create))
+            {
+                BinaryFormatter formatter = new BinaryFormatter();
+                formatter.Serialize(fileStream, keyMap);
+                Debug.Log("Keymap saved..");
+            }
+        }
+        catch (System.Exception ex)
+        {
+            Debug.LogError($"Failed to save keymap: {ex.Message}");
+        }
     }
 
-    void Start()
+    public void ModifyMap(KeyAction action, KeyCode newKey1 = KeyCode.None, KeyCode newKey2 = KeyCode.None)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    { 
+        if (loadedKeyMap != null)
+        {
+            if (loadedKeyMap.keymap.ContainsKey(action))
+            {
+                if (newKey1 == KeyCode.None)
+                    loadedKeyMap.keymap[action] = new KeyCode[2] { loadedKeyMap.keymap[action][0], newKey2 };
+                else if (newKey2 == KeyCode.None)
+                    loadedKeyMap.keymap[action] = new KeyCode[2] { newKey1, loadedKeyMap.keymap[action][1] };
+                else
+                {
+                    Debug.LogWarning($"Keymodify got no values");
+                    return;
+                }                
+                SaveMap(loadedKeyMap);
+                Debug.Log($"Action: {action} successfully modified to: key_1: {newKey1} || key_2: {newKey2}");
+            }
+            else
+                Debug.LogWarning($"Action {action} is not found in key mappings");
+        }
+        else
+            Debug.Log("Key map is not initialized.");
     }
 }
