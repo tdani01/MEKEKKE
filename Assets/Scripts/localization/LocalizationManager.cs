@@ -28,7 +28,7 @@ public class LocalizationManager : MonoBehaviour
         LoadLocalText(selectedLocal);
     }
 
-    private void LoadLocalText(Locals local)
+    public void LoadLocalText(Locals local)
     {
         localizedText = new Dictionary<string, string>();
         if (File.Exists(filePath))

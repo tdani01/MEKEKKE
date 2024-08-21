@@ -11,7 +11,7 @@ public class KeyHandler : MonoBehaviour
 {
 
     public static KeyHandler Instance { get; private set; }
-    private string filepath = Path.Combine(Application.persistentDataPath, "keymap.dat");
+    public string filepath = Path.Combine(Application.persistentDataPath, "keymap.dat");
 
     private KeyMap loadedKeyMap;
     public enum KeyAction
