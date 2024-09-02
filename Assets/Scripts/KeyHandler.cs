@@ -1,17 +1,19 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
-using UnityEditor;
 using System;
-using System.Xml;
+using System.Runtime.CompilerServices;
+
+static class KeyFiles
+{
+    [SerializeField] public static string filepath = Path.Combine(Application.persistentDataPath, "keymap.dat");
+}
 
 public class KeyHandler : MonoBehaviour
 {
-
     public static KeyHandler Instance { get; private set; }
-    public string filepath = Path.Combine(Application.persistentDataPath, "keymap.dat");
+    
 
     private KeyMap loadedKeyMap;
     public enum KeyAction
@@ -81,7 +83,7 @@ public class KeyHandler : MonoBehaviour
 
     public KeyMap LoadMap()
     {
-        if (!File.Exists(filepath))
+        if (!File.Exists(KeyFiles.filepath))
         {
             Debug.LogWarning("Keymap file not found"); // only if start has not run
             return null;
@@ -89,7 +91,7 @@ public class KeyHandler : MonoBehaviour
 
         try
         {
-            using (FileStream fileStream = new FileStream(filepath, FileMode.Open))
+            using (FileStream fileStream = new FileStream(KeyFiles.filepath, FileMode.Open))
             {
                 BinaryFormatter formatter = new BinaryFormatter();
                 KeyMap loadedKeyMap = (KeyMap)formatter.Deserialize(fileStream);
@@ -106,10 +108,10 @@ public class KeyHandler : MonoBehaviour
 
     public void SaveMap(KeyMap keyMap)
     {
-        if (!string.IsNullOrEmpty(filepath)) { return; } // throw error
+        if (!string.IsNullOrEmpty(KeyFiles.filepath)) { return; } // throw error
         try
         {
-            using (FileStream fileStream = new FileStream(filepath, FileMode.Create))
+            using (FileStream fileStream = new FileStream(KeyFiles.filepath, FileMode.Create))
             {
                 BinaryFormatter formatter = new BinaryFormatter();
                 formatter.Serialize(fileStream, keyMap);

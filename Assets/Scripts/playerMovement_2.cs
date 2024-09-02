@@ -31,16 +31,24 @@ public class PlayerMovement : MonoBehaviour
         if (jumpCounter > 0 && IsGrounded())
             jumpCounter = 0;
         horizontal = Input.GetAxisRaw("Horizontal"); // rework keyhandler
+
         if (KeyHandler.Instance.GetKeyDown(KeyHandler.KeyAction.m_Jump) && IsGrounded() && !isDoubleJump)
+        {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+        }
         else if (isDoubleJump && KeyHandler.Instance.GetKeyDown(KeyHandler.KeyAction.m_Jump) && jumpCounter < 1)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
             jumpCounter++;
         }
-        else if (KeyHandler.Instance.GetKeyUp(KeyHandler.KeyAction.m_Jump) && rb.velocity.y > 0f)
+        if (KeyHandler.Instance.GetKeyUp(KeyHandler.KeyAction.m_Jump) && rb.velocity.y > 0f)
+        {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
-
+        }
+        /*if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
+        {
+            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+        }*/
         /*add crouch*/
 
         Flip();
