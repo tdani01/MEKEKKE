@@ -7,6 +7,9 @@ TagManager:
   - obj
   - destroyer
   - detector
+  - MLine
+  - SLine
+  - LLine
   layers:
   - Default
   - TransparentFX
