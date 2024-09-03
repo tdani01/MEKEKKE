@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c5909b2ef22612498157df9ac678b0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sebesseg: 0.2
+  sebesseg: 0.1
   obj: {fileID: 5019926042859109295}
 --- !u!50 &-818980868588516555
 Rigidbody2D:

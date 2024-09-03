@@ -13,7 +13,7 @@ public class Line_detect : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.CompareTag("detector") && Input.GetKeyDown(KeyCode.Space))
+        if (collision.CompareTag("detector"))
         {
             Debug.Log("Siker");
             Destroy(line);
