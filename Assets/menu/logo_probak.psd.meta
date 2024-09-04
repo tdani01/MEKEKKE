@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 10cea12b500d1b04ab9fd336b21483a2
+guid: 951af5ea3f4542a4e80ef166e982a77a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: menu_gombok_kesz-07_0
+      name: logo_probak_0
       rect:
         serializedVersion: 2
-        x: 625
-        y: 276
-        width: 1807
-        height: 643
+        x: 259
+        y: 217
+        width: 735
+        height: 506
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0244a30f17370d843a6b5fe5d2f150e4
-      internalID: 1920906635
+      spriteID: 8b7191fbe6b889c42b8c56fa6411c8d6
+      internalID: -1548005926
       vertices: []
       indices: 
       edges: []
@@ -141,7 +141,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      menu_gombok_kesz-07_0: 1920906635
+      logo_probak_0: -1548005926
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
