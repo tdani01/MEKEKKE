@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - obj
+  - destroyer
+  - detector
+  - MLine
+  - SLine
+  - LLine
   layers:
   - Default
   - TransparentFX
