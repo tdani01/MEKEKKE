@@ -4,6 +4,11 @@ using UnityEngine;
 using System.IO;
 using System;
 
+static class LocalFiles
+{
+    public static string filePath = Path.Combine(Application.persistentDataPath, $"Locals/local_{LocalizationManager.selectedLocal}.txt");
+}
+
 public class LocalizationManager : MonoBehaviour
 {
     public enum Locals
@@ -16,7 +21,7 @@ public class LocalizationManager : MonoBehaviour
 
     public Dictionary<string, string> localizedText;
     public static Locals selectedLocal = Locals.hu;
-    public static string filePath = Path.Combine(Application.persistentDataPath, $"Locals/local_{selectedLocal}.txt");
+    
     private void Awake()
     {
         if (instance == null)
@@ -31,9 +36,9 @@ public class LocalizationManager : MonoBehaviour
     public void LoadLocalText(Locals local)
     {
         localizedText = new Dictionary<string, string>();
-        if (File.Exists(filePath))
+        if (File.Exists(LocalFiles.filePath))
         {
-            string[] lines = File.ReadAllLines(filePath);
+            string[] lines = File.ReadAllLines(LocalFiles.filePath);
             foreach (string line in lines)
             {
                 string[] parts = line.Split('=');
@@ -47,7 +52,7 @@ public class LocalizationManager : MonoBehaviour
             }
         }
         else
-            Debug.LogError($"Local file not found: {filePath}");
+            Debug.LogError($"Local file not found: {LocalFiles.filePath}");
     }
 
     /// <summary>

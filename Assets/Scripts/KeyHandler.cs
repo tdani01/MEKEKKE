@@ -33,7 +33,7 @@ public class KeyHandler : MonoBehaviour
     }
 
     private void Awake()
-    {
+    { 
         if (Instance == null)
         {
             Instance = this;
@@ -64,11 +64,13 @@ public class KeyHandler : MonoBehaviour
             keybinds.keymap[KeyAction.i_Back]       = new KeyCode[2] { KeyCode.Escape,  KeyCode.None        };
 
             SaveMap(keybinds);
-
+            loadedKeyMap = keybinds;
             Debug.Log("Key map initialized!");
         }
         else
             Debug.Log("Loaded existing key map");
+
+
     }
 
     [Serializable]
@@ -77,8 +79,16 @@ public class KeyHandler : MonoBehaviour
         public Dictionary<KeyAction, KeyCode[]> keymap = new Dictionary<KeyAction, KeyCode[]>();
     }
 
-    public bool GetKeyDown(KeyAction key)   { return Input.GetKeyDown(loadedKeyMap.keymap[key][0])  || Input.GetKeyDown(loadedKeyMap.keymap[key][1]);   }
-    public bool GetKeyUp(KeyAction key)     { return Input.GetKeyUp(loadedKeyMap.keymap[key][0])    || Input.GetKeyUp(loadedKeyMap.keymap[key][1]);     }
+    public bool GetKeyDown(KeyAction key)   {
+        if (Input.GetKeyDown(loadedKeyMap.keymap[key][0]) || Input.GetKeyDown(loadedKeyMap.keymap[key][1]))
+            return true;
+        return false;
+    }
+    public bool GetKeyUp(KeyAction key) {
+        if (Input.GetKeyUp(loadedKeyMap.keymap[key][0]) || Input.GetKeyUp(loadedKeyMap.keymap[key][1]))
+            return true;
+        return false;
+    }
 
     public KeyMap LoadMap()
     {
@@ -146,5 +156,10 @@ public class KeyHandler : MonoBehaviour
         }
         else
             Debug.Log("Key map is not initialized.");
+    }
+
+    public void Start()
+    {
+        LoadOrInitializeKeyMap();
     }
 }

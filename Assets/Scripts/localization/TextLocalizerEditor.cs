@@ -61,7 +61,7 @@ public class TextLocalizerEditor : EditorWindow
             EditorGUILayout.HelpBox("localized text is not available", MessageType.Warning);
             return;
         }
-        EditorGUILayout.HelpBox(LocalizationManager.filePath,MessageType.Warning);
+        EditorGUILayout.HelpBox(LocalFiles.filePath,MessageType.Warning);
         //keys = new string[LocalizationManager.instance.localizedText.Keys.Count];
         //LocalizationManager.instance.localizedText.Keys.CopyTo(keys, 0);
         int selectedIndex = Mathf.Max(Array.IndexOf(keys, textLocalizer.key),0);
