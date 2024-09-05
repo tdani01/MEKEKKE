@@ -750,6 +750,7 @@ GameObject:
   - component: {fileID: 1477311030}
   - component: {fileID: 1477311032}
   - component: {fileID: 1477311033}
+  - component: {fileID: 1477311034}
   m_Layer: 0
   m_Name: Destroyer
   m_TagString: destroyer
@@ -896,6 +897,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &1477311034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477311028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a81d0a37156a40d40adb41ba09b718b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1696813673
 GameObject:
   m_ObjectHideFlags: 0

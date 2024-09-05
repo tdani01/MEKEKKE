@@ -1,18 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class falt : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    public void OnCollisionEnter2D(Collision2D collision)
     {
-        
+        if(collision.collider.CompareTag("MLine") || collision.collider.CompareTag("SLine") || collision.collider.CompareTag("LLine"))
+        {
+            Debug.Log("Fail");
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

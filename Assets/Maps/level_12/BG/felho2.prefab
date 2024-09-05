@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 518719833123697506}
-  - component: {fileID: -523535080765112713}
   - component: {fileID: -818980868588516555}
   - component: {fileID: 4754101605617384914}
+  - component: {fileID: -6188824341786227432}
   m_Layer: 0
   m_Name: felho2
   m_TagString: Untagged
@@ -35,20 +35,6 @@ Transform:
   - {fileID: 8438121080638616556}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-523535080765112713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5019926042859109295}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c5909b2ef22612498157df9ac678b0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sebesseg: 0.1
-  obj: {fileID: 5019926042859109295}
 --- !u!50 &-818980868588516555
 Rigidbody2D:
   serializedVersion: 4
@@ -121,6 +107,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &-6188824341786227432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5019926042859109295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44f25ec0821b89e41b7a7d50f151f413, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sebesseg: 0.08
+  obj: {fileID: 5019926042859109295}
 --- !u!1 &6245152555579315781
 GameObject:
   m_ObjectHideFlags: 0
