@@ -9,5 +9,9 @@ public class CanvasButton : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+    public void BackToCity()
+    {
+        //SceneManager.LoadScene();
+    }
 
 }

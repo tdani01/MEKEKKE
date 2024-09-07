@@ -15,6 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/level_12.unity
     guid: ab098b144c11e7349a25f7137e35de1c
   - enabled: 1
-    path: Assets/Scenes/DrawGame.unity
-    guid: a864eab72843c8e47910a459c6e268a3
+    path: Assets/Scenes/level_16.unity
+    guid: 92a1fa0d22eeeee4ab3ae1143e935884
   m_configObjects: {}

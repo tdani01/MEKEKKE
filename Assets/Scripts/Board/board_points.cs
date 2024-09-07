@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +8,17 @@ public class board_points : MonoBehaviour
 {
     private int points;
     public Text pointtext;
+    private GameObject line;
+    private bool detected = false;
+    public GameObject[] HP;
+    public GameObject win;
+    public Text winpoint;
+    private int minpoint = 1050;
+
+
+    public GameObject bgspawner;
+    public GameObject linespawner;
+
     void Start()
     {
         points = 0;
@@ -15,24 +27,79 @@ public class board_points : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        pointtext.text = points.ToString();
+
+        if (Input.GetKeyDown(KeyCode.Space) && detected)
+        {
+            if (line.CompareTag("SLine"))
+            {
+                points += 30;
+                Destroy(line);
+            }
+            else if(line.CompareTag("MLine"))
+            {
+                points += 20;
+                Destroy(line);
+            }
+            else if (line.CompareTag("LLine"))
+            {
+                points += 10;
+                Destroy(line);
+            }
+            else
+            {
+                Debug.Log("Invalid object!");
+                Destroy(line);
+            }
+            detected = false;
+        }
+        else if (Input.GetKeyDown(KeyCode.Space))
+        {
+            int hp = 0;
+            foreach (GameObject item in HP)
+            {
+                if (item.active)
+                {
+                    hp++;
+                }
+            }
+            hp--;
+            HP[hp].SetActive(false);
+
+        }
+        
+        if(points >= minpoint)
+        {
+            Victory();
+        }
+
+        pointtext.text = points.ToString() + "/" + minpoint;
+
+
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!Input.GetKey(KeyCode.Space))
+        if (collision.CompareTag("MLine") || collision.CompareTag("SLine") || collision.CompareTag("LLine"))
         {
-            if (collision.CompareTag("SLine"))
-            {
-                points += 3;
-            }
-            if (collision.CompareTag("MLine"))
-            {
-                points += 2;
-            }
-            if (collision.CompareTag("LLine"))
-            {
-                points += 1;
-            }
+            detected = true;
+            line = collision.gameObject;
         }
     }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("MLine") || collision.CompareTag("SLine") || collision.CompareTag("LLine"))
+        {
+            detected = false;
+        }
+    }
+
+    public void Victory()
+    {
+        winpoint.text = points.ToString();
+        win.SetActive(true);
+        bgspawner.SetActive(false);
+        linespawner.SetActive(false);
+        
+    }
+
 }

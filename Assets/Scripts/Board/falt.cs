@@ -9,11 +9,13 @@ public class falt : MonoBehaviour
 
     private int healtpoint;
     public GameObject gameover;
-    public GameObject pause;
     public Text point;
     public Text gopoint;
     public GameObject bgspawner;
     public GameObject linespawner;
+    public GameObject[] HP;
+    public GameObject winCanvas;
+    
 
     private void Start()
     {
@@ -22,27 +24,43 @@ public class falt : MonoBehaviour
 
     private void Update()
     {
+        int hpwatch = 0;
+        foreach (GameObject item in HP)
+        {
+            if (item.active)
+            {
+                hpwatch++;
+            }
+        }
+        //Debug.Log(healtpoint);
+        healtpoint = hpwatch;
+        if (healtpoint <= 0 && !gameover.active)
+        {
 
+            GameOver();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("MLine") || collision.CompareTag("SLine") || collision.CompareTag("LLine"))
+        if ((collision.CompareTag("MLine") || collision.CompareTag("SLine") || collision.CompareTag("LLine")) && !winCanvas.active)
         {
             healtpoint -= 1;
-            Debug.Log(healtpoint);
-            if(healtpoint <= 0)
+            if(healtpoint >= 0 && !gameover.active)
             {
-                GameOver();
+                HP[healtpoint].SetActive(false);
             }
+            //Debug.Log(healtpoint);
+            
 
         }
+        Destroy(collision.gameObject);
     }
 
     private void GameOver()
     {
-        gopoint.text = "A pontod:\n" + point.text.ToString();
-        point.enabled = false;
+        string[] validpoint = point.text.ToString().Split('/');
+        gopoint.text = validpoint[0];
         gameover.SetActive(true);
         bgspawner.SetActive(false);
         linespawner.SetActive(false);
