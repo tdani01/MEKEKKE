@@ -15,12 +15,10 @@ public class ButtonHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     public void OnPointerEnter(PointerEventData eventData)
     {
         button.image.sprite = img1;
-        Debug.Log("rajta");
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
         button.image.sprite = img2;
-        Debug.Log("Levéve");
     }
 }
