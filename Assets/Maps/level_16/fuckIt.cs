@@ -12,7 +12,7 @@ public class fuckIt : MonoBehaviour
     {
         mainCamera = Camera.main;
         Debug.Log("Width: "+Screen.width+"\nHeight: "+Screen.height);
-        Dictionary<string>
+        
     }
 }
 

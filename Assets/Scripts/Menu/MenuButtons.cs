@@ -11,8 +11,7 @@ public class MenuButtons : MonoBehaviour
     public GameObject makers;
 
     public void gameStart()
-    {
-        
+    {        
         SceneManager.LoadScene(1);
     }
     public void Makers()
@@ -23,9 +22,7 @@ public class MenuButtons : MonoBehaviour
 
     public void Exit()
     {
-
         Application.Quit();
-
     }
     
     public void Back()

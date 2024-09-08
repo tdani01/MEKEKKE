@@ -27,7 +27,6 @@ public class board_points : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if (Input.GetKeyDown(KeyCode.Space) && detected)
         {
             if (line.CompareTag("SLine"))
@@ -65,16 +64,12 @@ public class board_points : MonoBehaviour
             hp--;
             HP[hp].SetActive(false);
 
-        }
-        
+        }        
         if(points >= minpoint)
         {
             Victory();
         }
-
         pointtext.text = points.ToString() + "/" + minpoint;
-
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -98,8 +93,6 @@ public class board_points : MonoBehaviour
         winpoint.text = points.ToString();
         win.SetActive(true);
         bgspawner.SetActive(false);
-        linespawner.SetActive(false);
-        
+        linespawner.SetActive(false);        
     }
-
 }
