@@ -6,18 +6,27 @@ using UnityEngine.SceneManagement;
 
 public class MenuButtons : MonoBehaviour
 {
-
     public GameObject menu;
     public GameObject makers;
+    public GameObject notImplemented;
+
+    private GameObject lastOpened;
+    private GameObject current;
+
+    private void Start()
+    {
+       lastOpened = menu;
+       current = menu;
+    }
 
     public void gameStart()
-    {        
-        SceneManager.LoadScene(1);
+    {   
+        notImplemented.SetActive(true);
+        //SceneManager.LoadScene(1);
     }
     public void Makers()
     {
-        menu.SetActive(false);
-        makers.SetActive(true);
+        Switch(menu, makers);
     }
 
     public void Exit()
@@ -27,8 +36,23 @@ public class MenuButtons : MonoBehaviour
     
     public void Back()
     {
-        makers.SetActive(false);
-        menu.SetActive(true);
+        GameObject temp = current;
+        lastOpened.SetActive(true);
+        current.SetActive(false);
+        current = lastOpened;
+        lastOpened = temp;
     }
 
+    public void back2()
+    {
+        notImplemented.SetActive(false);
+    }
+
+    public void Switch(GameObject prev, GameObject next)
+    {
+        lastOpened = prev;
+        current = next;
+        prev.SetActive(false);
+        next.SetActive(true);
+    }
 }

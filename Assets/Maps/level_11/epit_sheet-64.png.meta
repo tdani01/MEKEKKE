@@ -1,0 +1,1095 @@
+fileFormatVersion: 2
+guid: 9bc5e5911be36194c985a268a93fa18b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: epit_sheet-64_0
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 3802
+        width: 791
+        height: 993
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71b3399ace201b6438ad01b2ae5089c7
+      internalID: -1212274094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_1
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 3802
+        width: 618
+        height: 1154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d7cc0367bdd3864b9218b63eef6250d
+      internalID: 395710898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_2
+      rect:
+        serializedVersion: 2
+        x: 2870
+        y: 3802
+        width: 544
+        height: 1168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1664a58d33069ca44afd069916b32a98
+      internalID: 1230541467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_3
+      rect:
+        serializedVersion: 2
+        x: 4119
+        y: 3802
+        width: 490
+        height: 1127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 735ce0b1ec645da46ab0265b31ae3e57
+      internalID: -982901464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_4
+      rect:
+        serializedVersion: 2
+        x: 5368
+        y: 3802
+        width: 550
+        height: 1168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73f77c5f851785549beeb2c6bb302f5e
+      internalID: -780814131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_5
+      rect:
+        serializedVersion: 2
+        x: 6617
+        y: 3802
+        width: 624
+        height: 1154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 994e0d51b62ef3147b906b4a94cb1dfd
+      internalID: 520637348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_6
+      rect:
+        serializedVersion: 2
+        x: 7872
+        y: 3802
+        width: 544
+        height: 1168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c31a8624db00e5a40b028038e85199ba
+      internalID: 1030059111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_7
+      rect:
+        serializedVersion: 2
+        x: 9121
+        y: 3802
+        width: 490
+        height: 1127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e3a2da06fa5aa446b718b2b868e86b6
+      internalID: -1821060911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_8
+      rect:
+        serializedVersion: 2
+        x: 10370
+        y: 3802
+        width: 543
+        height: 1168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a0c2568a4fb38042ac43b77ad6d1328
+      internalID: -1814580688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_9
+      rect:
+        serializedVersion: 2
+        x: 11618
+        y: 3802
+        width: 625
+        height: 1154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1e0e923f75fa7f47ac51f12b3207eab
+      internalID: -1210819232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_10
+      rect:
+        serializedVersion: 2
+        x: 12867
+        y: 3802
+        width: 792
+        height: 993
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f3a44904d654f1478e8bdc7b639cf2f
+      internalID: -558248858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_11
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 2554
+        width: 731
+        height: 993
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfbcba3dde0810a4cae0e25dd8a25797
+      internalID: 1309008000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_12
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 2554
+        width: 618
+        height: 1140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8367e491789fd0459056512e2103886
+      internalID: -2056302654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_13
+      rect:
+        serializedVersion: 2
+        x: 2870
+        y: 2548
+        width: 557
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9652e9c24a45bca4fb5a5364b72874f7
+      internalID: 753860321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_14
+      rect:
+        serializedVersion: 2
+        x: 4119
+        y: 2554
+        width: 490
+        height: 1114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2cde0e89eb463e4caf7c1edac4b6f82
+      internalID: -142833040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_15
+      rect:
+        serializedVersion: 2
+        x: 5368
+        y: 2548
+        width: 557
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0adb9c68c0c0174ea721559ad821a46
+      internalID: 809396983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_16
+      rect:
+        serializedVersion: 2
+        x: 6618
+        y: 2554
+        width: 623
+        height: 1140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84495b50de2cc4441b9f52ed560eec24
+      internalID: -814871147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_17
+      rect:
+        serializedVersion: 2
+        x: 7872
+        y: 2548
+        width: 551
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a331dc580f57cf443b834055e8cc5005
+      internalID: 671284891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_18
+      rect:
+        serializedVersion: 2
+        x: 9121
+        y: 2554
+        width: 490
+        height: 1114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a59a4428da22904cb0a3f3269f58e2f
+      internalID: 2135154247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_19
+      rect:
+        serializedVersion: 2
+        x: 10370
+        y: 2548
+        width: 556
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3bc89b610668b7409d6a7faeb5e3103
+      internalID: 372373595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_20
+      rect:
+        serializedVersion: 2
+        x: 11618
+        y: 2554
+        width: 625
+        height: 1140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1267e76836c00e4ea28379f7073ddfe
+      internalID: 612060901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_21
+      rect:
+        serializedVersion: 2
+        x: 12868
+        y: 2554
+        width: 738
+        height: 993
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a477f8c35a3020a48a22036738703803
+      internalID: 1351950324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_22
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 1285
+        width: 370
+        height: 993
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0bd11b95a9a1b14e9095696e3e8f46d
+      internalID: 1948453633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_23
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 1285
+        width: 517
+        height: 1168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5964f4488a8c5a4687229d70598a4fd
+      internalID: -801793900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_24
+      rect:
+        serializedVersion: 2
+        x: 2837
+        y: 1285
+        width: 429
+        height: 1195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 089d819d720f75343a77e0031c86139c
+      internalID: 876867257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_25
+      rect:
+        serializedVersion: 2
+        x: 4085
+        y: 1285
+        width: 410
+        height: 1181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f531262a778b6a544a015047c29097da
+      internalID: -1144503396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_26
+      rect:
+        serializedVersion: 2
+        x: 5334
+        y: 1285
+        width: 430
+        height: 1195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 971cbb89b092e92429ed28d1d645c6b1
+      internalID: -93279975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_27
+      rect:
+        serializedVersion: 2
+        x: 6583
+        y: 1285
+        width: 516
+        height: 1168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8109019d16644141930b3f9db8fb443
+      internalID: -1368260478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_28
+      rect:
+        serializedVersion: 2
+        x: 7832
+        y: 1285
+        width: 429
+        height: 1195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a7a4b65fbf80354ca3c7a5cbce91f60
+      internalID: 594325317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_29
+      rect:
+        serializedVersion: 2
+        x: 9081
+        y: 1285
+        width: 416
+        height: 1181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59632ea613adc354aa6034b09580cf49
+      internalID: 351060443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_30
+      rect:
+        serializedVersion: 2
+        x: 10336
+        y: 1285
+        width: 430
+        height: 1195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0ff0d90881566f48b6df31c06fcab4b
+      internalID: -1764441242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_31
+      rect:
+        serializedVersion: 2
+        x: 11585
+        y: 1285
+        width: 510
+        height: 1168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d1c68075bf80f84e874833499ab743b
+      internalID: 1714009777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_32
+      rect:
+        serializedVersion: 2
+        x: 12834
+        y: 1285
+        width: 369
+        height: 993
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04541779290249745bdffa7f0a198cff
+      internalID: -2111425101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_33
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 30
+        width: 369
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 279db60149883764cb975a3e4cc989e0
+      internalID: -904632074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_34
+      rect:
+        serializedVersion: 2
+        x: 1561
+        y: 30
+        width: 510
+        height: 1175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8074424fb5f1fb4f897579b58310771
+      internalID: -1695827429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_35
+      rect:
+        serializedVersion: 2
+        x: 2891
+        y: 30
+        width: 434
+        height: 1202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f1b0a95e8a11114a955446afb80f7e1
+      internalID: -1918854806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_36
+      rect:
+        serializedVersion: 2
+        x: 4159
+        y: 30
+        width: 416
+        height: 1181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23ed02805211677449a712a91cd3e035
+      internalID: -2089055286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_37
+      rect:
+        serializedVersion: 2
+        x: 5395
+        y: 30
+        width: 429
+        height: 1202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bf4f2e6882d7b04097ba713040a00f6
+      internalID: 1636068455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_38
+      rect:
+        serializedVersion: 2
+        x: 6563
+        y: 30
+        width: 510
+        height: 1175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ee9f6c4032bd2644a2bb75db943dcc9
+      internalID: 1210807898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_39
+      rect:
+        serializedVersion: 2
+        x: 7892
+        y: 30
+        width: 430
+        height: 1202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 744faf1033fd0dc44a48a408663972b4
+      internalID: 774144730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_40
+      rect:
+        serializedVersion: 2
+        x: 9161
+        y: 30
+        width: 410
+        height: 1181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e237d144641566247b7c3b5daabb983e
+      internalID: 101937169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_41
+      rect:
+        serializedVersion: 2
+        x: 10391
+        y: 30
+        width: 435
+        height: 1202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28be3a5f184e7b648948d86701aabe26
+      internalID: -1058397941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_42
+      rect:
+        serializedVersion: 2
+        x: 11558
+        y: 30
+        width: 517
+        height: 1175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74fa3d739b9ae944c92fceafea4ce3dd
+      internalID: 160312000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epit_sheet-64_43
+      rect:
+        serializedVersion: 2
+        x: 12954
+        y: 30
+        width: 370
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f06adebf67afa744bcbd74e6b729c41
+      internalID: -635709367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      epit_sheet-64_0: -1212274094
+      epit_sheet-64_1: 395710898
+      epit_sheet-64_10: -558248858
+      epit_sheet-64_11: 1309008000
+      epit_sheet-64_12: -2056302654
+      epit_sheet-64_13: 753860321
+      epit_sheet-64_14: -142833040
+      epit_sheet-64_15: 809396983
+      epit_sheet-64_16: -814871147
+      epit_sheet-64_17: 671284891
+      epit_sheet-64_18: 2135154247
+      epit_sheet-64_19: 372373595
+      epit_sheet-64_2: 1230541467
+      epit_sheet-64_20: 612060901
+      epit_sheet-64_21: 1351950324
+      epit_sheet-64_22: 1948453633
+      epit_sheet-64_23: -801793900
+      epit_sheet-64_24: 876867257
+      epit_sheet-64_25: -1144503396
+      epit_sheet-64_26: -93279975
+      epit_sheet-64_27: -1368260478
+      epit_sheet-64_28: 594325317
+      epit_sheet-64_29: 351060443
+      epit_sheet-64_3: -982901464
+      epit_sheet-64_30: -1764441242
+      epit_sheet-64_31: 1714009777
+      epit_sheet-64_32: -2111425101
+      epit_sheet-64_33: -904632074
+      epit_sheet-64_34: -1695827429
+      epit_sheet-64_35: -1918854806
+      epit_sheet-64_36: -2089055286
+      epit_sheet-64_37: 1636068455
+      epit_sheet-64_38: 1210807898
+      epit_sheet-64_39: 774144730
+      epit_sheet-64_4: -780814131
+      epit_sheet-64_40: 101937169
+      epit_sheet-64_41: -1058397941
+      epit_sheet-64_42: 160312000
+      epit_sheet-64_43: -635709367
+      epit_sheet-64_5: 520637348
+      epit_sheet-64_6: 1030059111
+      epit_sheet-64_7: -1821060911
+      epit_sheet-64_8: -1814580688
+      epit_sheet-64_9: -1210819232
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
