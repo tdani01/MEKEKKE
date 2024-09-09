@@ -1,0 +1,655 @@
+fileFormatVersion: 2
+guid: df365505a82a77940a0d0e9d675bcd88
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mozgas_futas_sheet-26-26_0
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 3374
+        width: 793
+        height: 1007
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ff339e93aa349b4bacecbdfc423e6ba
+      internalID: 472681894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozgas_futas_sheet-26-26_1
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 3362
+        width: 563
+        height: 1006
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8a0846d6d6623549abb7cbc1bfa7566
+      internalID: -2000652531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozgas_futas_sheet-26-26_2
+      rect:
+        serializedVersion: 2
+        x: 2530
+        y: 3358
+        width: 569
+        height: 1019
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e47ac8c6639d704fa08e03d1c7fa374
+      internalID: -1662672474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozgas_futas_sheet-26-26_3
+      rect:
+        serializedVersion: 2
+        x: 3410
+        y: 3426
+        width: 876
+        height: 971
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91eda91d0e553114d90dc09490b16753
+      internalID: -561944635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozgas_futas_sheet-26-26_4
+      rect:
+        serializedVersion: 2
+        x: 4558
+        y: 3316
+        width: 805
+        height: 1061
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b47da7242015333428bda9a4d0a48955
+      internalID: 1575624802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozgas_futas_sheet-26-26_5
+      rect:
+        serializedVersion: 2
+        x: 5790
+        y: 3339
+        width: 554
+        height: 1064
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6559226bbe8d6874aa720116eeb25b51
+      internalID: 1708496177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozgas_futas_sheet-26-26_6
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 2271
+        width: 793
+        height: 1006
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52c1a9a8b77a0c9409303e4799eb53cb
+      internalID: -1402124477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozgas_futas_sheet-26-26_7
+      rect:
+        serializedVersion: 2
+        x: 1291
+        y: 2262
+        width: 563
+        height: 1006
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b77a0cc50e7ac9946955cb13c096f5b0
+      internalID: 12739725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozgas_futas_sheet-26-26_8
+      rect:
+        serializedVersion: 2
+        x: 2339
+        y: 2255
+        width: 569
+        height: 1019
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37b7460da0573744f8d18b1e4e70c6c1
+      internalID: -1271162662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozgas_futas_sheet-26-26_9
+      rect:
+        serializedVersion: 2
+        x: 3322
+        y: 2323
+        width: 877
+        height: 971
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d2d4f681dc4fa47a51766be74fa0c8
+      internalID: -2125169003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozgas_futas_sheet-26-26_10
+      rect:
+        serializedVersion: 2
+        x: 4432
+        y: 2213
+        width: 805
+        height: 1061
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3a1b7d9839c3674ba02b15b1106d0e7
+      internalID: -747536316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozgas_futas_sheet-26-26_11
+      rect:
+        serializedVersion: 2
+        x: 5687
+        y: 2236
+        width: 550
+        height: 1064
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bf52099549bfa94b8ff841beaed3a9a
+      internalID: 1458104420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozgas_futas_sheet-26-26_12
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 1226
+        width: 460
+        height: 909
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 389629c4d85f272498b66823b2dfa3c8
+      internalID: 1055401092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozgas_futas_sheet-26-26_13
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 1132
+        width: 459
+        height: 987
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f12379e6f9631344b3d493db05fb689
+      internalID: -1450517293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozgas_futas_sheet-26-26_14
+      rect:
+        serializedVersion: 2
+        x: 2481
+        y: 1191
+        width: 482
+        height: 944
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5485effe080fc7345abf8dadba5be4b7
+      internalID: -259109597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozgas_futas_sheet-26-26_15
+      rect:
+        serializedVersion: 2
+        x: 3594
+        y: 1187
+        width: 469
+        height: 919
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06163f4cae4e0774c8313310bc4dce2e
+      internalID: -2136700803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozgas_futas_sheet-26-26_16
+      rect:
+        serializedVersion: 2
+        x: 4700
+        y: 1200
+        width: 466
+        height: 906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58d9cd53793e30549bad3a70013a7cf3
+      internalID: -1102380117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozgas_futas_sheet-26-26_17
+      rect:
+        serializedVersion: 2
+        x: 5816
+        y: 1210
+        width: 463
+        height: 909
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aea262a9c4184240b539ebdbd665b9d
+      internalID: 1672880937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozgas_futas_sheet-26-26_18
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 52
+        width: 466
+        height: 990
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 877a0b0b3c45225488cc93c151b5f914
+      internalID: 162292926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozgas_futas_sheet-26-26_19
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 94
+        width: 453
+        height: 967
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf2c3458284245f4188595d1bd988802
+      internalID: -1963065757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozgas_futas_sheet-26-26_20
+      rect:
+        serializedVersion: 2
+        x: 2559
+        y: 45
+        width: 449
+        height: 997
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 899c3c12029b0c342bd701da4cf37609
+      internalID: 620283718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozgas_futas_sheet-26-26_21
+      rect:
+        serializedVersion: 2
+        x: 3678
+        y: 16
+        width: 495
+        height: 1048
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bda71c0125d8764cac86a1aec0f32d5
+      internalID: -1805207294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozgas_futas_sheet-26-26_22
+      rect:
+        serializedVersion: 2
+        x: 4768
+        y: 113
+        width: 505
+        height: 926
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec9b39ee989702342a2bcdbba66adfe2
+      internalID: 809886839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mozgas_futas_sheet-26-26_23
+      rect:
+        serializedVersion: 2
+        x: 5878
+        y: 71
+        width: 472
+        height: 958
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 007b1182fdd1b124d89990bb75622af9
+      internalID: 2087010705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      mozgas_futas_sheet-26-26_0: 472681894
+      mozgas_futas_sheet-26-26_1: -2000652531
+      mozgas_futas_sheet-26-26_10: -747536316
+      mozgas_futas_sheet-26-26_11: 1458104420
+      mozgas_futas_sheet-26-26_12: 1055401092
+      mozgas_futas_sheet-26-26_13: -1450517293
+      mozgas_futas_sheet-26-26_14: -259109597
+      mozgas_futas_sheet-26-26_15: -2136700803
+      mozgas_futas_sheet-26-26_16: -1102380117
+      mozgas_futas_sheet-26-26_17: 1672880937
+      mozgas_futas_sheet-26-26_18: 162292926
+      mozgas_futas_sheet-26-26_19: -1963065757
+      mozgas_futas_sheet-26-26_2: -1662672474
+      mozgas_futas_sheet-26-26_20: 620283718
+      mozgas_futas_sheet-26-26_21: -1805207294
+      mozgas_futas_sheet-26-26_22: 809886839
+      mozgas_futas_sheet-26-26_23: 2087010705
+      mozgas_futas_sheet-26-26_3: -561944635
+      mozgas_futas_sheet-26-26_4: 1575624802
+      mozgas_futas_sheet-26-26_5: 1708496177
+      mozgas_futas_sheet-26-26_6: -1402124477
+      mozgas_futas_sheet-26-26_7: 12739725
+      mozgas_futas_sheet-26-26_8: -1271162662
+      mozgas_futas_sheet-26-26_9: -2125169003
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
