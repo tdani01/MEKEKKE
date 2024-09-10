@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Move_10 : MonoBehaviour
 {
-
+    public float movementspeed;
     public Animator animator;
 
     // Start is called before the first frame update
@@ -25,6 +25,6 @@ public class Move_10 : MonoBehaviour
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
 
-        transform.position = transform.position + movement * Time.deltaTime * 2f;
+        transform.position = transform.position + movement * Time.deltaTime * movementspeed;
     }
 }

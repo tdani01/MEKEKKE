@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: df365505a82a77940a0d0e9d675bcd88
+guid: d98dbbd5f31ffb241a1c7928571fcf74
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mozgas_futas_sheet-26-26_0
+      name: uj_mozgas_futas_sheet-26_0
       rect:
         serializedVersion: 2
         x: 110
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ff339e93aa349b4bacecbdfc423e6ba
-      internalID: 472681894
+      spriteID: a169bd5fb4f394343aeb73f6923981a0
+      internalID: 627514375
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mozgas_futas_sheet-26-26_1
+      name: uj_mozgas_futas_sheet-26_1
       rect:
         serializedVersion: 2
         x: 1362
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8a0846d6d6623549abb7cbc1bfa7566
-      internalID: -2000652531
+      spriteID: 45f5370b7b3fdbf4eb90b9f0b23c9f3f
+      internalID: -993982722
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mozgas_futas_sheet-26-26_2
+      name: uj_mozgas_futas_sheet-26_2
       rect:
         serializedVersion: 2
         x: 2530
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e47ac8c6639d704fa08e03d1c7fa374
-      internalID: -1662672474
+      spriteID: 90ac44078e75c134ca16aea117326bc9
+      internalID: 67528608
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mozgas_futas_sheet-26-26_3
+      name: uj_mozgas_futas_sheet-26_3
       rect:
         serializedVersion: 2
         x: 3410
@@ -187,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91eda91d0e553114d90dc09490b16753
-      internalID: -561944635
+      spriteID: 8561e338343f01d4dba3c2a30b452496
+      internalID: 468786794
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mozgas_futas_sheet-26-26_4
+      name: uj_mozgas_futas_sheet-26_4
       rect:
         serializedVersion: 2
         x: 4558
@@ -208,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b47da7242015333428bda9a4d0a48955
-      internalID: 1575624802
+      spriteID: d3069f955b261d64099029bedc73aa0a
+      internalID: 210507889
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mozgas_futas_sheet-26-26_5
+      name: uj_mozgas_futas_sheet-26_5
       rect:
         serializedVersion: 2
         x: 5790
@@ -229,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6559226bbe8d6874aa720116eeb25b51
-      internalID: 1708496177
+      spriteID: 3be5ffa37cffd714d80c2c3bf626aab4
+      internalID: 1658855702
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mozgas_futas_sheet-26-26_6
+      name: uj_mozgas_futas_sheet-26_6
       rect:
         serializedVersion: 2
         x: 110
@@ -250,14 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52c1a9a8b77a0c9409303e4799eb53cb
-      internalID: -1402124477
+      spriteID: d425644555de8964daf1b7c3f959f9a1
+      internalID: -409439694
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mozgas_futas_sheet-26-26_7
+      name: uj_mozgas_futas_sheet-26_7
       rect:
         serializedVersion: 2
         x: 1291
@@ -271,14 +271,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b77a0cc50e7ac9946955cb13c096f5b0
-      internalID: 12739725
+      spriteID: 59d8b7b9c44b1b94cafea638695c322f
+      internalID: 1134736263
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mozgas_futas_sheet-26-26_8
+      name: uj_mozgas_futas_sheet-26_8
       rect:
         serializedVersion: 2
         x: 2339
@@ -292,14 +292,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37b7460da0573744f8d18b1e4e70c6c1
-      internalID: -1271162662
+      spriteID: 8a4ebdfc3e6e1524095e4610a37f4b57
+      internalID: 1624583625
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mozgas_futas_sheet-26-26_9
+      name: uj_mozgas_futas_sheet-26_9
       rect:
         serializedVersion: 2
         x: 3322
@@ -313,14 +313,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84d2d4f681dc4fa47a51766be74fa0c8
-      internalID: -2125169003
+      spriteID: 71799c1e5b88db245bf733d0862a1926
+      internalID: -750807937
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mozgas_futas_sheet-26-26_10
+      name: uj_mozgas_futas_sheet-26_10
       rect:
         serializedVersion: 2
         x: 4432
@@ -334,14 +334,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3a1b7d9839c3674ba02b15b1106d0e7
-      internalID: -747536316
+      spriteID: 5c314553c91a6e0489a824bac88f6092
+      internalID: 110050785
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mozgas_futas_sheet-26-26_11
+      name: uj_mozgas_futas_sheet-26_11
       rect:
         serializedVersion: 2
         x: 5687
@@ -355,14 +355,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8bf52099549bfa94b8ff841beaed3a9a
-      internalID: 1458104420
+      spriteID: 4c01c6259fb34be43944ccd57c6899f4
+      internalID: -53839179
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mozgas_futas_sheet-26-26_12
+      name: uj_mozgas_futas_sheet-26_12
       rect:
         serializedVersion: 2
         x: 323
@@ -376,14 +376,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 389629c4d85f272498b66823b2dfa3c8
-      internalID: 1055401092
+      spriteID: c3aea925794bc91479718f9987d607c5
+      internalID: 504042320
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mozgas_futas_sheet-26-26_13
+      name: uj_mozgas_futas_sheet-26_13
       rect:
         serializedVersion: 2
         x: 1420
@@ -397,14 +397,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f12379e6f9631344b3d493db05fb689
-      internalID: -1450517293
+      spriteID: 012d81b040e4e9f4dbb76fe7668196c6
+      internalID: 1941100227
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mozgas_futas_sheet-26-26_14
+      name: uj_mozgas_futas_sheet-26_14
       rect:
         serializedVersion: 2
         x: 2481
@@ -418,14 +418,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5485effe080fc7345abf8dadba5be4b7
-      internalID: -259109597
+      spriteID: a12e54663cf682040ba1fba3cb1f7d32
+      internalID: 1452413365
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mozgas_futas_sheet-26-26_15
+      name: uj_mozgas_futas_sheet-26_15
       rect:
         serializedVersion: 2
         x: 3594
@@ -439,14 +439,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06163f4cae4e0774c8313310bc4dce2e
-      internalID: -2136700803
+      spriteID: fa72c2caaacb8e246afdb75eeba35870
+      internalID: -1098512951
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mozgas_futas_sheet-26-26_16
+      name: uj_mozgas_futas_sheet-26_16
       rect:
         serializedVersion: 2
         x: 4700
@@ -460,14 +460,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58d9cd53793e30549bad3a70013a7cf3
-      internalID: -1102380117
+      spriteID: a8e00f9cbb72cdc4e97c2eab37a15762
+      internalID: -1534469428
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mozgas_futas_sheet-26-26_17
+      name: uj_mozgas_futas_sheet-26_17
       rect:
         serializedVersion: 2
         x: 5816
@@ -481,14 +481,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7aea262a9c4184240b539ebdbd665b9d
-      internalID: 1672880937
+      spriteID: fb8014fffa56a4c46bb481d521505264
+      internalID: 99591552
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mozgas_futas_sheet-26-26_18
+      name: uj_mozgas_futas_sheet-26_18
       rect:
         serializedVersion: 2
         x: 349
@@ -502,14 +502,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 877a0b0b3c45225488cc93c151b5f914
-      internalID: 162292926
+      spriteID: e4b1f5ac4c0ced34197c5971e60d2101
+      internalID: 1156484273
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mozgas_futas_sheet-26-26_19
+      name: uj_mozgas_futas_sheet-26_19
       rect:
         serializedVersion: 2
         x: 1430
@@ -523,14 +523,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf2c3458284245f4188595d1bd988802
-      internalID: -1963065757
+      spriteID: 18249982bcd1b41489b633f9e9e7f678
+      internalID: 417263360
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mozgas_futas_sheet-26-26_20
+      name: uj_mozgas_futas_sheet-26_20
       rect:
         serializedVersion: 2
         x: 2559
@@ -544,14 +544,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 899c3c12029b0c342bd701da4cf37609
-      internalID: 620283718
+      spriteID: 6c789c2ca6c1fb04b883cd6fef0c15bf
+      internalID: -800370835
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mozgas_futas_sheet-26-26_21
+      name: uj_mozgas_futas_sheet-26_21
       rect:
         serializedVersion: 2
         x: 3678
@@ -565,14 +565,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5bda71c0125d8764cac86a1aec0f32d5
-      internalID: -1805207294
+      spriteID: fb90fa4b2efb2754995f0239ec1908a3
+      internalID: 1703201402
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mozgas_futas_sheet-26-26_22
+      name: uj_mozgas_futas_sheet-26_22
       rect:
         serializedVersion: 2
         x: 4768
@@ -586,14 +586,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec9b39ee989702342a2bcdbba66adfe2
-      internalID: 809886839
+      spriteID: e96a1a56d7b028b41b6111a2f5da7301
+      internalID: -1719842583
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mozgas_futas_sheet-26-26_23
+      name: uj_mozgas_futas_sheet-26_23
       rect:
         serializedVersion: 2
         x: 5878
@@ -607,8 +607,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 007b1182fdd1b124d89990bb75622af9
-      internalID: 2087010705
+      spriteID: 5c42babdb5fae1a41925160d5df02bbf
+      internalID: -519096590
       vertices: []
       indices: 
       edges: []
@@ -624,30 +624,30 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      mozgas_futas_sheet-26-26_0: 472681894
-      mozgas_futas_sheet-26-26_1: -2000652531
-      mozgas_futas_sheet-26-26_10: -747536316
-      mozgas_futas_sheet-26-26_11: 1458104420
-      mozgas_futas_sheet-26-26_12: 1055401092
-      mozgas_futas_sheet-26-26_13: -1450517293
-      mozgas_futas_sheet-26-26_14: -259109597
-      mozgas_futas_sheet-26-26_15: -2136700803
-      mozgas_futas_sheet-26-26_16: -1102380117
-      mozgas_futas_sheet-26-26_17: 1672880937
-      mozgas_futas_sheet-26-26_18: 162292926
-      mozgas_futas_sheet-26-26_19: -1963065757
-      mozgas_futas_sheet-26-26_2: -1662672474
-      mozgas_futas_sheet-26-26_20: 620283718
-      mozgas_futas_sheet-26-26_21: -1805207294
-      mozgas_futas_sheet-26-26_22: 809886839
-      mozgas_futas_sheet-26-26_23: 2087010705
-      mozgas_futas_sheet-26-26_3: -561944635
-      mozgas_futas_sheet-26-26_4: 1575624802
-      mozgas_futas_sheet-26-26_5: 1708496177
-      mozgas_futas_sheet-26-26_6: -1402124477
-      mozgas_futas_sheet-26-26_7: 12739725
-      mozgas_futas_sheet-26-26_8: -1271162662
-      mozgas_futas_sheet-26-26_9: -2125169003
+      uj_mozgas_futas_sheet-26_0: 627514375
+      uj_mozgas_futas_sheet-26_1: -993982722
+      uj_mozgas_futas_sheet-26_10: 110050785
+      uj_mozgas_futas_sheet-26_11: -53839179
+      uj_mozgas_futas_sheet-26_12: 504042320
+      uj_mozgas_futas_sheet-26_13: 1941100227
+      uj_mozgas_futas_sheet-26_14: 1452413365
+      uj_mozgas_futas_sheet-26_15: -1098512951
+      uj_mozgas_futas_sheet-26_16: -1534469428
+      uj_mozgas_futas_sheet-26_17: 99591552
+      uj_mozgas_futas_sheet-26_18: 1156484273
+      uj_mozgas_futas_sheet-26_19: 417263360
+      uj_mozgas_futas_sheet-26_2: 67528608
+      uj_mozgas_futas_sheet-26_20: -800370835
+      uj_mozgas_futas_sheet-26_21: 1703201402
+      uj_mozgas_futas_sheet-26_22: -1719842583
+      uj_mozgas_futas_sheet-26_23: -519096590
+      uj_mozgas_futas_sheet-26_3: 468786794
+      uj_mozgas_futas_sheet-26_4: 210507889
+      uj_mozgas_futas_sheet-26_5: 1658855702
+      uj_mozgas_futas_sheet-26_6: -409439694
+      uj_mozgas_futas_sheet-26_7: 1134736263
+      uj_mozgas_futas_sheet-26_8: 1624583625
+      uj_mozgas_futas_sheet-26_9: -750807937
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
