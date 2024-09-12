@@ -68,9 +68,9 @@ public class find_obj : MonoBehaviour
                     break;
 
                 case "bg":
-                   /* if (!gv.help) 
-                        GetSomeHelp(); TO BE FIXED */
-                    gv.help = true;
+                    if (!gv.help) 
+                        GetSomeHelp();
+                    
                     icon = new GameObject();
                     break;
 
@@ -91,7 +91,7 @@ public class find_obj : MonoBehaviour
         GameObject[] shits = new GameObject[4] { GameObject.Find("trike_obj"), GameObject.Find("stego_obj"), GameObject.Find("bronto_obj"), GameObject.Find("rex_obj") };
         foreach (GameObject item in shits)
         {
-            if (item.activeSelf)
+            if (item.active)
             {
                 switch (gameObject.name)
                 {
@@ -122,5 +122,6 @@ public class find_obj : MonoBehaviour
             }
         }
         Debug.LogWarning("No other objects to set false");
+        gv.help = true;
     }
 }
