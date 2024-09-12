@@ -51,18 +51,25 @@ public class board_points : MonoBehaviour
             }
             detected = false;
         }
-        else if (Input.GetKeyDown(KeyCode.Space))
+        else if (Input.GetKeyDown(KeyCode.Space) && !win.activeSelf)
         {
-            int hp = 0;
-            foreach (GameObject item in HP)
+            try
             {
-                if (item.active)
+                int hp = 0;
+                foreach (GameObject item in HP)
                 {
-                    hp++;
+                    if (item.activeSelf)
+                    {
+                        hp++;
+                    }
                 }
+                hp--;
+                HP[hp].SetActive(false);
             }
-            hp--;
-            HP[hp].SetActive(false);
+            catch (System.Exception)
+            {
+
+            }
 
         }        
         if(points >= minpoint)

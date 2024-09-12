@@ -27,14 +27,14 @@ public class falt : MonoBehaviour
         int hpwatch = 0;
         foreach (GameObject item in HP)
         {
-            if (item.active)
+            if (item.activeSelf)
             {
                 hpwatch++;
             }
         }
         //Debug.Log(healtpoint);
         healtpoint = hpwatch;
-        if (healtpoint <= 0 && !gameover.active)
+        if (healtpoint <= 0 && !gameover.activeSelf)
         {
 
             GameOver();
@@ -43,10 +43,10 @@ public class falt : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if ((collision.CompareTag("MLine") || collision.CompareTag("SLine") || collision.CompareTag("LLine")) && !winCanvas.active)
+        if ((collision.CompareTag("MLine") || collision.CompareTag("SLine") || collision.CompareTag("LLine")) && !winCanvas.activeSelf)
         {
             healtpoint -= 1;
-            if(healtpoint >= 0 && !gameover.active)
+            if(healtpoint >= 0 && !gameover.activeSelf)
             {
                 HP[healtpoint].SetActive(false);
             }
