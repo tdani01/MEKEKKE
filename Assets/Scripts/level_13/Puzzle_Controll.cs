@@ -7,6 +7,7 @@ public class Puzzle_Controll : MonoBehaviour
 
     public List<GameObject> Maps;
     private GameObject activeGame;
+    public GameObject Victory;
 
     // Start is called before the first frame update
     void Start()
@@ -22,15 +23,23 @@ public class Puzzle_Controll : MonoBehaviour
 
     public void MapLoad()
     {
-        if(activeGame != null)
+        try
         {
-            activeGame.SetActive(false);
+            if (activeGame != null)
+            {
+                activeGame.SetActive(false);
+            }
+
+            int rnd = Random.Range(0, Maps.Count);
+            Maps[rnd].SetActive(true);
+            activeGame = Maps[rnd];
+            Maps.RemoveAt(rnd);
         }
-        
-        int rnd = Random.Range(0, Maps.Count);
-        Maps[rnd].SetActive(true);
-        activeGame = Maps[rnd];
-        Maps.RemoveAt(rnd);
+        catch (System.Exception)
+        {
+            Debug.Log("Vége");
+            Victory.SetActive(true);
+        }
     }
 
     

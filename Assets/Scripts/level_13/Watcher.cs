@@ -24,9 +24,11 @@ public class Watcher : MonoBehaviour
     public GameObject[] now;
     private List<ig> sig = new List<ig>();
 
-    public GameObject Victory;
+    
 
     public UnityEvent[] unselects;
+
+    public UnityEvent newmap;
 
     // Start is called before the first frame update
 
@@ -36,14 +38,30 @@ public class Watcher : MonoBehaviour
         sig.Add(new ig(-1));
     }
 
+    private float timer = 0f;
     // Update is called once per frame
     void Update()
     {
-        if (sig[0].s != -1 && sig[1].s != -1)
+        if (!Check())
         {
-            Debug.Log("Kiválasztva 2 object!");
-            Change(sig[0], sig[1]);
-            
+            if (sig[0].s != -1 && sig[1].s != -1)
+            {
+                //Debug.Log("Kiválasztva 2 object!");
+                Change(sig[0], sig[1]);
+
+            }
+        }
+        if (Check())
+        {
+            if(timer < 1.6f)
+            {
+                timer += Time.deltaTime;
+            }
+            else
+            {
+                newmap.Invoke();
+                //Debug.Log("Vége");
+            }
         }
     }
 
@@ -118,10 +136,10 @@ public class Watcher : MonoBehaviour
         unselects[a.s].Invoke();
         unselects[b.s].Invoke();
 
-        Check();
+        
     }
 
-    private void Check()
+    private bool Check()
     {
         bool equals = false;
         for (int i = 0; i < target.Length; i++)
@@ -137,10 +155,7 @@ public class Watcher : MonoBehaviour
             }
         }
 
-        if (equals)
-        {
-            Victory.SetActive(true);
-        }
+        return equals;
 
     }
 }
