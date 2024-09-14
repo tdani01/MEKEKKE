@@ -5,89 +5,88 @@ using UnityEngine;
 [System.Serializable]
 public class help : MonoBehaviour
 {
-    public byte _part = 0;
-    public byte counter = 0;
-    public Dictionary<byte, GameObject[]> elements = new Dictionary<byte, GameObject[]>();
+    [Header("Basic settings")]
+    [SerializeField] private byte _part = 0;
+    [SerializeField] private byte counter = 0;
     private Camera mainCamera;
     public bool isHelped = false;
-    int score = 0;
-    public byte levelCount = 6;
+    public int score = 0;
+    public int levelCount = 1;
+    public List<GameObject> elements = new List<GameObject>();
+    public GameObject lv1Map;
+    public GameObject lv2Map;
+    public GameObject lv3Map;
+    public GameObject lv4Map;
+    public GameObject lv5Map;
+    public GameObject lv6Map;
+    public GameObject winScreen;
     private void Start()
     { 
-        for (byte i = 0; i < levelCount; i++)
-        {
-            elements[i] = new[]
-            {
-                GameObject.Find($"level_{levelCount}").transform.GetChild(0).gameObject,
-                GameObject.Find($"level_{levelCount}").transform.GetChild(1).gameObject,
-                GameObject.Find($"level_{levelCount}").transform.GetChild(2).gameObject,
-                GameObject.Find($"level_{levelCount}").transform.GetChild(3).gameObject,
-
-                GameObject.Find($"level_{levelCount}").transform.GetChild(4).gameObject,
-                GameObject.Find($"level_{levelCount}").transform.GetChild(5).gameObject,
-                GameObject.Find($"level_{levelCount}").transform.GetChild(6).gameObject,
-                GameObject.Find($"level_{levelCount}").transform.GetChild(7).gameObject,
-
-                GameObject.Find($"level_{levelCount}")
-            };
-        }
         mainCamera = Camera.main;
+        
     } // 0-3 obj, 4-7 icon
-    public void Help(byte part)
-    {        
-       
-    }
-
     private void SwitchState()
     {
-        elements[_part][8].SetActive(false);
-        _part++;
-        elements[_part][8].SetActive(true);
         counter = 0;
         isHelped = false;
+        switch (_part)
+        {
+            case 0:
+                lv1Map.SetActive(false);
+                lv2Map.SetActive(true);
+                _part++;
+                return;
+            case 1:
+                lv2Map.SetActive(false);
+                lv3Map.SetActive(true);
+                _part++;
+                return;
+            case 2:
+                lv3Map.SetActive(false);
+                lv4Map.SetActive(true);
+                _part++;
+                return;
+            case 3:
+                lv4Map.SetActive(false);
+                lv5Map.SetActive(true);
+                _part++;
+                return;
+            case 4:
+                lv5Map.SetActive(false);
+                lv6Map.SetActive(true);
+                _part++;
+                return;
+            case 5: // win case                
+                return;
+        }       
     }
 
     private void Update()
     {
         if (counter >= 4)
         {
+            Debug.Log($"Score: {score}\nCounter: {counter}");
             SwitchState();
+            
         }
-        if (_part <= 6 && Input.GetKeyDown(KeyCode.Mouse0))
+        if (!isHelped && Input.GetKeyDown(KeyCode.Mouse0) && gameObject.GetComponent<Collider2D>().OverlapPoint(mainCamera.ScreenToWorldPoint(Input.mousePosition)))
         {
-            for (int i = 0; i < 4; i++)
-            {
-                if (elements[_part][i].GetComponent<Collider2D>().OverlapPoint(mainCamera.ScreenToWorldPoint(Input.mousePosition)))
-                {
-                    elements[_part][i].SetActive(false);
-                    elements[_part][i+4].SetActive(false);
-                    counter++;
-                    score++;
-                }
-            }
-            if (!isHelped && gameObject.GetComponent<Collider2D>().OverlapPoint(mainCamera.ScreenToWorldPoint(Input.mousePosition)))
-            {
-                for (int i = 0; i < 4; i++)
-                {
-                    if (elements[_part][i].activeSelf)
-                    {
-                        elements[_part][i].SetActive(false);
-                        elements[_part][i+4].SetActive(false);
-                        counter++;
-                        isHelped = true;
-                    }
-                }
-            }
+            Found(elements[0], elements[0].GetComponent<hover>().icon, true);       
+            isHelped = true;
         }
     }
 
+    public void Found(GameObject obj, GameObject icon, bool isHelp = false)
+    {
+        icon.SetActive(false);
+        obj.SetActive(false);
+        elements.Remove(obj);
+        if (!isHelp)
+            score++;
+        counter++;
+    }
     public void WinGame()
     {
 
     }
-
-    /*public void LoseGame() Igazából nem tudja elveszíteni
-    {
-
-    }*/
 }

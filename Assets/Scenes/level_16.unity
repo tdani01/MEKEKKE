@@ -237,10 +237,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96afa40be400c094e89e5c0c2d961c6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winScreen: {fileID: 1800741889}
   normalColor: {r: 1, g: 1, b: 1, a: 1}
   hoverColor: {r: 0.4862745, g: 0.4862745, b: 0.4862745, a: 1}
-  gv: {fileID: 0}
+  icon: {fileID: 203568373}
+  mgrScript: {fileID: 0}
 --- !u!60 &141042466
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -674,10 +674,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96afa40be400c094e89e5c0c2d961c6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winScreen: {fileID: 1800741889}
   normalColor: {r: 1, g: 1, b: 1, a: 1}
   hoverColor: {r: 0.4862745, g: 0.4862745, b: 0.4862745, a: 1}
-  gv: {fileID: 0}
+  icon: {fileID: 494954948}
+  mgrScript: {fileID: 0}
 --- !u!60 &165185266
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1401,8 +1401,8 @@ Transform:
   - {fileID: 1702627266}
   - {fileID: 203568375}
   - {fileID: 1670509120}
-  - {fileID: 1261064316}
   - {fileID: 83930873}
+  - {fileID: 1261064316}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &466071201
@@ -1416,12 +1416,12 @@ GameObject:
   - component: {fileID: 466071203}
   - component: {fileID: 466071202}
   m_Layer: 0
-  m_Name: level_0 (1)
+  m_Name: level_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &466071202
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1612,10 +1612,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96afa40be400c094e89e5c0c2d961c6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winScreen: {fileID: 1800741889}
   normalColor: {r: 1, g: 1, b: 1, a: 1}
   hoverColor: {r: 0.4867924, g: 0.4867924, b: 0.4867924, a: 1}
-  gv: {fileID: 0}
+  icon: {fileID: 1670509118}
+  mgrScript: {fileID: 0}
 --- !u!60 &534820925
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1993,7 +1993,16 @@ MonoBehaviour:
   _part: 0
   counter: 0
   isHelped: 0
-  levelCount: 6
+  score: 0
+  levelCount: 1
+  elements: []
+  lv1Map: {fileID: 406889949}
+  lv2Map: {fileID: 466071201}
+  lv3Map: {fileID: 0}
+  lv4Map: {fileID: 0}
+  lv5Map: {fileID: 0}
+  lv6Map: {fileID: 0}
+  winScreen: {fileID: 0}
 --- !u!61 &779933275
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2184,10 +2193,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96afa40be400c094e89e5c0c2d961c6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winScreen: {fileID: 1800741889}
   normalColor: {r: 1, g: 1, b: 1, a: 1}
   hoverColor: {r: 0.4867924, g: 0.4867924, b: 0.4867924, a: 1}
-  gv: {fileID: 0}
+  icon: {fileID: 823919015}
+  mgrScript: {fileID: 0}
 --- !u!60 &874365499
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2837,10 +2846,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96afa40be400c094e89e5c0c2d961c6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winScreen: {fileID: 1800741889}
   normalColor: {r: 1, g: 1, b: 1, a: 1}
   hoverColor: {r: 0.4862745, g: 0.4862745, b: 0.4862745, a: 1}
-  gv: {fileID: 0}
+  icon: {fileID: 1261064314}
+  mgrScript: {fileID: 0}
 --- !u!60 &1637917885
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3270,10 +3279,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96afa40be400c094e89e5c0c2d961c6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winScreen: {fileID: 1800741889}
   normalColor: {r: 1, g: 1, b: 1, a: 1}
   hoverColor: {r: 0.4862745, g: 0.4862745, b: 0.4862745, a: 1}
-  gv: {fileID: 0}
+  icon: {fileID: 386401155}
+  mgrScript: {fileID: 0}
 --- !u!60 &1667160870
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3878,10 +3887,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96afa40be400c094e89e5c0c2d961c6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winScreen: {fileID: 1800741889}
   normalColor: {r: 1, g: 1, b: 1, a: 1}
   hoverColor: {r: 0.4862745, g: 0.4862745, b: 0.4862745, a: 1}
-  gv: {fileID: 0}
+  icon: {fileID: 351211713}
+  mgrScript: {fileID: 0}
 --- !u!60 &1700656656
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4281,10 +4290,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96afa40be400c094e89e5c0c2d961c6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winScreen: {fileID: 1800741889}
   normalColor: {r: 1, g: 1, b: 1, a: 1}
   hoverColor: {r: 0.4862745, g: 0.4862745, b: 0.4862745, a: 1}
-  gv: {fileID: 0}
+  icon: {fileID: 83930871}
+  mgrScript: {fileID: 0}
 --- !u!60 &1702627264
 PolygonCollider2D:
   m_ObjectHideFlags: 0
