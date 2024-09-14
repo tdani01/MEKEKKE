@@ -20,7 +20,7 @@ public class help : MonoBehaviour
     public GameObject lv4Map;
     public GameObject lv5Map;
     public GameObject lv6Map;
-    public Canvas winScreen;
+    public GameObject winScreen;
     public GameObject scoreTextText;
     private void Start()
     { 
@@ -62,7 +62,7 @@ public class help : MonoBehaviour
                 lv6Map.SetActive(false);
                 Text scoreText = scoreTextText.GetComponent<Text>();
                 scoreText.text = score.ToString();
-                winScreen.gameObject.SetActive(true);
+                winScreen.SetActive(true);
                 return;
         }       
     }
@@ -90,9 +90,5 @@ public class help : MonoBehaviour
         if (!isHelp)
             score++;
         counter++;
-    }
-    public void WinGame()
-    {
-
     }
 }
