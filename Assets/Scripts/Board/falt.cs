@@ -59,8 +59,8 @@ public class falt : MonoBehaviour
 
     private void GameOver()
     {
-        string[] validpoint = point.text.ToString().Split('/');
-        gopoint.text = validpoint[0];
+        
+        gopoint.text = point.text;
         gameover.SetActive(true);
         bgspawner.SetActive(false);
         linespawner.SetActive(false);

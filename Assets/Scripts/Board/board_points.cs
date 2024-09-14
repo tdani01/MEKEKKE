@@ -13,7 +13,7 @@ public class board_points : MonoBehaviour
     public GameObject[] HP;
     public GameObject win;
     public Text winpoint;
-    private int minpoint = 1050;
+    private int minpoint = 1000;
 
 
     public GameObject bgspawner;
@@ -71,12 +71,15 @@ public class board_points : MonoBehaviour
 
             }
 
-        }        
-        if(points >= minpoint)
+        }
+
+        pointtext.text = points.ToString() + " / " + minpoint;
+        
+        if (points >= minpoint)
         {
             Victory();
         }
-        pointtext.text = points.ToString() + "/" + minpoint;
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -97,7 +100,7 @@ public class board_points : MonoBehaviour
 
     public void Victory()
     {
-        winpoint.text = points.ToString();
+        //winpoint.text = points.ToString();
         win.SetActive(true);
         bgspawner.SetActive(false);
         linespawner.SetActive(false);        
