@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//[RequireComponent(typeof(PolygonCollider2D))]
+[RequireComponent(typeof(PolygonCollider2D))]
 public class hover : MonoBehaviour
 {
     [SerializeField] public Color normalColor = new(255, 255, 255, 1);
