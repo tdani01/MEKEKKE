@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using TMPro.EditorUtilities;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 [System.Serializable]
@@ -14,14 +17,21 @@ public class help : MonoBehaviour
     public int score = 0;
     public int levelCount = 1;
     public List<GameObject> elements = new List<GameObject>();
+    [Header("Maps")]
     public GameObject lv1Map;
     public GameObject lv2Map;
     public GameObject lv3Map;
     public GameObject lv4Map;
     public GameObject lv5Map;
     public GameObject lv6Map;
+    [Header("Win")]
     public GameObject winScreen;
-    public GameObject scoreTextText;
+    public TextMeshProUGUI score_object;
+    [Header("Win/Buttons")]
+    public GameObject btnNext;
+    public GameObject btnRetry;
+    [Header("help")]
+    public GameObject helpbtn;
     private void Start()
     { 
         mainCamera = Camera.main;
@@ -60,8 +70,10 @@ public class help : MonoBehaviour
                 return;
             case 5: // win case
                 lv6Map.SetActive(false);
-                Text scoreText = scoreTextText.GetComponent<Text>();
-                scoreText.text = score.ToString();
+                if (score == 24)
+                    btnRetry.SetActive(false);
+                helpbtn.GetComponent<SpriteRenderer>().sprite = null;
+                score_object.text = score.ToString();
                 winScreen.SetActive(true);
                 return;
         }       
@@ -69,6 +81,12 @@ public class help : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            _part = 5;
+            counter = 4;
+            score = 23;
+        }
         if (counter >= 4)
         {
             Debug.Log($"Score: {score}\nCounter: {counter}");
@@ -90,5 +108,19 @@ public class help : MonoBehaviour
         if (!isHelp)
             score++;
         counter++;
+    }
+
+    public void BTN_Next()
+    {
+        //SceneManager
+    }
+
+    public void BTN_Retry()
+    {
+        counter = 0;
+        _part = 0;
+        score = 0;
+        isHelped = false;
+        winScreen.SetActive(false);
     }
 }
