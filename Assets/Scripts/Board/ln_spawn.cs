@@ -10,24 +10,41 @@ public class ln_spawn : MonoBehaviour
     public float csokkenesIdo;
     public float minIdo;
 
+    private float StartTimer = 3f;
+    private bool LetsGo = false;
+
     // Update is called once per frame
     void Update()
     {
 
-        if (spawnKoztiIdo <= 0)
+        if (LetsGo)
         {
-            //rnd = new Random();
-            int rand = Random.Range(0, lines.Length);
-            Instantiate(lines[rand], transform.position, Quaternion.identity);
-            spawnKoztiIdo = kezdesSpawnIdo;
-            if (kezdesSpawnIdo > minIdo)
+            if (spawnKoztiIdo <= 0)
             {
-                kezdesSpawnIdo -= csokkenesIdo;
+                //rnd = new Random();
+                int rand = Random.Range(0, lines.Length);
+                Instantiate(lines[rand], transform.position, Quaternion.identity);
+                spawnKoztiIdo = kezdesSpawnIdo;
+                if (kezdesSpawnIdo > minIdo)
+                {
+                    kezdesSpawnIdo -= csokkenesIdo;
+                }
+            }
+            else
+            {
+                spawnKoztiIdo -= Time.deltaTime;
             }
         }
         else
         {
-            spawnKoztiIdo -= Time.deltaTime;
+            if (StartTimer > 0)
+            {
+                StartTimer -= Time.deltaTime;
+            }
+            else
+            {
+                LetsGo = true;
+            }
         }
 
     }
