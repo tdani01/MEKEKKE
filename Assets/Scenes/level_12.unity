@@ -295,8 +295,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 180, y: -130}
-  m_SizeDelta: {x: 103, y: 50}
+  m_AnchoredPosition: {x: 181.27, y: -147}
+  m_SizeDelta: {x: 67.46, y: 37.6382}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &158352357
 MonoBehaviour:
@@ -349,7 +349,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -804,8 +804,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.77259445, y: 0.00001335144}
+  m_SizeDelta: {x: 1.5452, y: -0.000015259}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &809941988
 MonoBehaviour:
@@ -1392,8 +1392,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -180, y: -130}
-  m_SizeDelta: {x: 60, y: 60}
+  m_AnchoredPosition: {x: -190.00002, y: -147}
+  m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1159298061
 MonoBehaviour:
@@ -2065,7 +2065,7 @@ GameObject:
   - component: {fileID: 1938172324}
   - component: {fileID: 1938172323}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: Finish
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2088,8 +2088,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 160, y: -124}
-  m_SizeDelta: {x: 114.8184, y: 67.9759}
+  m_AnchoredPosition: {x: 166, y: -132}
+  m_SizeDelta: {x: 57.2619, y: 35.8513}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1938172323
 MonoBehaviour:
@@ -2137,12 +2137,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 677307580}
         m_TargetAssemblyTypeName: CanvasButton, Assembly-CSharp
-        m_MethodName: BackToCity
-        m_Mode: 1
+        m_MethodName: GoCity
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

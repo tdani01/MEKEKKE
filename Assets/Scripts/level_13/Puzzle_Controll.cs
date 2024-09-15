@@ -37,7 +37,6 @@ public class Puzzle_Controll : MonoBehaviour
         }
         catch (System.Exception)
         {
-            Debug.Log("Vége");
             Victory.SetActive(true);
         }
     }

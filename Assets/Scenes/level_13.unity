@@ -2777,6 +2777,50 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 14.77, y: 8.41}
   m_EdgeRadius: 0
+--- !u!1 &407758802
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 407758804}
+  - component: {fileID: 407758803}
+  m_Layer: 0
+  m_Name: CanvasButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &407758803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407758802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c34e1205cce11846b21eb3d577cadcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &407758804
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407758802}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.18826197, y: 5.1944246, z: 2.1965024}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &614779234
 GameObject:
   m_ObjectHideFlags: 0
@@ -4899,8 +4943,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000085831, y: -13.735}
-  m_SizeDelta: {x: 137.525, y: 57.469}
+  m_AnchoredPosition: {x: 185, y: -146}
+  m_SizeDelta: {x: 74.1709, y: 34.2907}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &908477564
 MonoBehaviour:
@@ -4945,7 +4989,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 908477565}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 407758803}
+        m_TargetAssemblyTypeName: CanvasButton, Assembly-CSharp
+        m_MethodName: GoCity
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &908477565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12448,3 +12504,4 @@ SceneRoots:
   - {fileID: 39577542}
   - {fileID: 311931600}
   - {fileID: 950030444}
+  - {fileID: 407758804}
