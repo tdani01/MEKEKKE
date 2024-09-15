@@ -26,10 +26,10 @@ public class help : MonoBehaviour
     public GameObject lv6Map;
     [Header("Win")]
     public GameObject winScreen;
-    public TextMeshProUGUI score_object;
+    //public TextMeshProUGUI score_object;
     [Header("Win/Buttons")]
-    public GameObject btnNext;
-    public GameObject btnRetry;
+    //public GameObject btnNext;
+    //public GameObject btnRetry;
     [Header("help")]
     public GameObject helpbtn;
     private void Start()
@@ -39,6 +39,7 @@ public class help : MonoBehaviour
     } // 0-3 obj, 4-7 icon
     private void SwitchState()
     {
+        
         counter = 0;
         isHelped = false;
         switch (_part)
@@ -47,35 +48,37 @@ public class help : MonoBehaviour
                 lv1Map.SetActive(false);
                 lv2Map.SetActive(true);
                 _part++;
-                return;
+                break;
             case 1:
                 lv2Map.SetActive(false);
                 lv3Map.SetActive(true);
                 _part++;
-                return;
+                break;
             case 2:
                 lv3Map.SetActive(false);
                 lv4Map.SetActive(true);
                 _part++;
-                return;
+                break;
             case 3:
                 lv4Map.SetActive(false);
                 lv5Map.SetActive(true);
                 _part++;
-                return;
+                break;
             case 4:
                 lv5Map.SetActive(false);
                 lv6Map.SetActive(true);
                 _part++;
-                return;
+                break;
             case 5: // win case
                 lv6Map.SetActive(false);
-                if (score == 24)
-                    btnRetry.SetActive(false);
-                helpbtn.GetComponent<SpriteRenderer>().sprite = null;
-                score_object.text = score.ToString();
                 winScreen.SetActive(true);
-                return;
+                //btnNext.SetActive(true);
+                //if (score == 24)
+                //    btnRetry.SetActive(false);
+                helpbtn.GetComponent<SpriteRenderer>().sprite = null;
+                //score_object.text = score.ToString();
+                
+                break;
         }       
     }
 
@@ -110,17 +113,17 @@ public class help : MonoBehaviour
         counter++;
     }
 
-    public void BTN_Next()
-    {
-        //SceneManager
-    }
+    //public void BTN_Next()
+    //{
+    //    //SceneManager
+    //}
 
-    public void BTN_Retry()
-    {
-        counter = 0;
-        _part = 0;
-        score = 0;
-        isHelped = false;
-        winScreen.SetActive(false);
-    }
+    //public void BTN_Retry()
+    //{
+    //    counter = 0;
+    //    _part = 0;
+    //    score = 0;
+    //    isHelped = false;
+    //    winScreen.SetActive(false);
+    //}
 }

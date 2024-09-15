@@ -12,7 +12,18 @@ public class OpenMinigame : MonoBehaviour
     //private bool stop = false;
     private string StandingName = "";
     public GameObject[] Helps;
-    
+
+    private void Start()
+    {
+        if(PolicePoints.Police_Point == 4)
+        {
+            Helps[6].SetActive(true);
+        }
+        else if(PolicePoints.Police_Point == 0)
+        {
+            Helps[0].SetActive(true);
+        }
+    }
 
     // Update is called once per frame
     void Update()
@@ -23,6 +34,16 @@ public class OpenMinigame : MonoBehaviour
             //Debug.Log(StandingName);
             switch (StandingName)
             {
+                case "Police":
+                    if (PolicePoints.Police_Point < 4)
+                    {
+                        Helps[5].SetActive(true);
+                    }
+                    else
+                    {
+                        //VégeCutscene
+                    }
+                    break;
                 case "Hospital":
                     Helps[1].SetActive(true);
                     break;
@@ -34,10 +55,6 @@ public class OpenMinigame : MonoBehaviour
                     break;
                 case "Museum":
                     Helps[4].SetActive(true);
-                    break;
-                case "Police":
-                    //if(Police_Points < 5)
-                    Helps[0].SetActive(true);
                     break;
                 default:
                     Debug.Log("Hiba");
