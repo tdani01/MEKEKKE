@@ -17,7 +17,7 @@ public class OpenMinigame : MonoBehaviour
     {
         if(PolicePoints.Police_Point == 4)
         {
-            Helps[6].SetActive(true);
+            Helps[7].SetActive(true);
         }
         else if(PolicePoints.Police_Point == 0)
         {
@@ -55,6 +55,12 @@ public class OpenMinigame : MonoBehaviour
                     break;
                 case "Museum":
                     Helps[4].SetActive(true);
+                    break;
+                case "Library":
+                    Helps[6].SetActive(true);
+                    break;
+                case "Opera":
+                    Helps[6].SetActive(true);
                     break;
                 default:
                     Debug.Log("Hiba");

@@ -6,7 +6,7 @@ using UnityEngine;
 public class PolicePoints : MonoBehaviour
 {
 
-    public static int Police_Point = 3;
+    public static int Police_Point = 0;
     public static bool[] Minigames = { false, false, false, false };
     public static void AddPoint(int gameID)
     {
