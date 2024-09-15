@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5582719156223924297}
   - component: {fileID: 1405956063635508827}
   - component: {fileID: 593973822553975276}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: spawnedWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76,12 +76,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 91658da88fa442643ac5b95a32ec6cef, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ef745e2952782b1439e94966366caab5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.57, y: 2.57}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -104,6 +104,9 @@ MonoBehaviour:
   _sr: {fileID: 5582719156223924297}
   highlight: {fileID: 8191207791143535421}
   tileType: 3
+  isEnemySpawn: 0
+  isPlayerSpawn: 0
+  isUtilitySpawn: 0
 --- !u!61 &593973822553975276
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -140,8 +143,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6.04, y: 6.01}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 2.57, y: 2.57}
+    newSize: {x: 2.57, y: 2.57}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -159,7 +162,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7469641197178713733}
   - component: {fileID: 6116405655697062659}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Highlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -222,12 +225,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 91658da88fa442643ac5b95a32ec6cef, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ef745e2952782b1439e94966366caab5, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 0.81960785}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.57, y: 2.57}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

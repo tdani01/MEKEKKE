@@ -1,0 +1,2 @@
+0	/l_11/level_0/base.txt
+2	/l_11/fasz_level_1.txt3	/l_11/fasz_level_1.txt

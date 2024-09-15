@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4928501273551367275}
   - component: {fileID: 716542417962273259}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Highlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,12 +73,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0ede454f9c0944a4698de7f5f367e76a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a2682374921140b4f9e39068568c2f96, type: 3}
   m_Color: {r: 0.4867924, g: 0.4867924, b: 0.4867924, a: 0.8627451}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 10.68, y: 10.68}
+  m_Size: {x: 2.57, y: 2.57}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 4706541713216924312}
   - component: {fileID: 6469275394764422139}
   - component: {fileID: 4794589003475218717}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -165,7 +165,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 10.68, y: 10.68}
+  m_Size: {x: 2.57, y: 2.57}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -188,6 +188,9 @@ MonoBehaviour:
   _sr: {fileID: 4706541713216924312}
   highlight: {fileID: 1930597510750864963}
   tileType: 2
+  isEnemySpawn: 0
+  isPlayerSpawn: 0
+  isUtilitySpawn: 0
 --- !u!61 &4794589003475218717
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -224,8 +227,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10.68, y: 10.67}
-    newSize: {x: 10.68, y: 10.68}
+    oldSize: {x: 2.57, y: 2.57}
+    newSize: {x: 2.57, y: 2.57}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0

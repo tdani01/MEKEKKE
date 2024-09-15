@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8989141947360265368}
   - component: {fileID: 1299150630462908984}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Highlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 8422439901307920167}
   - component: {fileID: 9175428564690606170}
   - component: {fileID: 4475795297245820631}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -161,7 +161,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.98838425, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -183,11 +183,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 536f2f3812591e649a8ea95db3b9686c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseColor: {r: 0.12522249, g: 0.3962264, b: 0.14148012, a: 1}
-  _offsetColor: {r: 0.25031152, g: 0.7075472, b: 0.38233382, a: 1}
+  _baseColor: {r: 1, g: 0, b: 0.9836054, a: 1}
+  _offsetColor: {r: 0.4113207, g: 0, b: 0.36161393, a: 1}
   _sr: {fileID: 8422439901307920167}
   highlight: {fileID: 1697667538439667331}
   tileType: 0
+  isEnemySpawn: 0
+  isPlayerSpawn: 0
+  isUtilitySpawn: 0
 --- !u!61 &4475795297245820631
 BoxCollider2D:
   m_ObjectHideFlags: 0
