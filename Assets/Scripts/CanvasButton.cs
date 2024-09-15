@@ -26,10 +26,10 @@ public class CanvasButton : MonoBehaviour
     {
         SceneManager.LoadScene(gameId);
     }
-    public GameObject FireWall;
-    public void LeavePolice()
+    
+    public void LeaveHelp(GameObject canvas)
     {
-        FireWall.SetActive(false);
+        canvas.SetActive(false);
     }
 
 }

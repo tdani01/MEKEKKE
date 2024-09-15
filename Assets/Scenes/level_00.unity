@@ -832,7 +832,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1939097161}
         m_TargetAssemblyTypeName: MenuButtons, Assembly-CSharp
-        m_MethodName: Back
+        m_MethodName: BackToMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1289,6 +1289,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 841484465}
   makers: {fileID: 2134673183}
+  button: {fileID: 1489624767}
+  img: {fileID: 345446023, guid: e35e94fd97387dc42953387ef3eb2e62, type: 3}
 --- !u!4 &1939097162
 Transform:
   m_ObjectHideFlags: 0
@@ -1469,7 +1471,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1939097161}
         m_TargetAssemblyTypeName: MenuButtons, Assembly-CSharp
-        m_MethodName: Quit
+        m_MethodName: Exit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
