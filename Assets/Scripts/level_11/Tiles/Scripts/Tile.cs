@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Tile : MonoBehaviour
@@ -8,6 +9,7 @@ public class Tile : MonoBehaviour
     [SerializeField] private SpriteRenderer _sr;
     [SerializeField] private GameObject highlight;
     public TileType tileType;
+    private bool isInside = false;
 
     public void Init(bool isOffset)
     {
@@ -17,21 +19,24 @@ public class Tile : MonoBehaviour
     private void OnMouseEnter()
     {
         highlight.SetActive(true);
+        isInside = true;
     }
 
     private void OnMouseExit()
     {
         highlight.SetActive(false);
+        isInside = false;
     }
 
     private void OnMouseDown()
     {
         if (highlight.activeSelf)
         {
-            var spawnedTile = new Tile();
+            Tile spawnedTile;
             switch (tileType)
             {
                 case TileType.normal:
+                    Debug.Log("+");
                     spawnedTile = Instantiate(GridManager.Instance._wallTile, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y), Quaternion.identity);
                     spawnedTile.name = $"Wall {gameObject.transform.position.x} {gameObject.transform.position.y}";
                     spawnedTile.tileType = TileType.wall;
@@ -80,8 +85,21 @@ public class Tile : MonoBehaviour
                     break;
 
                 default:
-                    break;
+                    return;
             }
+            Destroy(gameObject);
         }
+        else
+            Debug.Log("-");
     }
+}
+public enum TileType
+{
+    normal,
+    border,
+    wall,
+    spawnedWall,
+    enemySpawn,
+    playerSpawn,
+    utilitySpawn
 }

@@ -6,7 +6,7 @@ public class GridManager : MonoBehaviour
 {
     public static GridManager Instance;
     [SerializeField] private float _width, _height;
-    [SerializeField] public Tile _baseTile, _wallTile, _borderTile, _enemySpawnTile, _playerSpawnTile, _utilitySpawnTile;
+    [SerializeField] public Tile _baseTile, _wallTile, _spawnedWallTile, _borderTile, _enemySpawnTile, _playerSpawnTile, _utilitySpawnTile;
     [SerializeField] private Transform _cam;
     [SerializeField] private Dictionary<Vector2, Tile> _tiles;
     [SerializeField] private List<string> tileData;
@@ -38,7 +38,7 @@ public class GridManager : MonoBehaviour
         }
         _cam.transform.position = new Vector3((float)(_width/2), (float)(_height/2), -10);
 
-        GameManager.Instance.ChangeState(GameState.SpawnPlayer);
+        //GameManager.Instance.ChangeState(GameState.SpawnPlayer);
     }
 
     public Tile GetTileAtPos(Vector2 pos)
@@ -56,16 +56,5 @@ public class GridManager : MonoBehaviour
             return null;
         }
     }
-}
-
-public enum TileType
-{
-    normal,
-    border,
-    wall,
-    spawnedWall,
-    enemySpawn,
-    playerSpawn,
-    utilitySpawn
 }
 

@@ -187,7 +187,7 @@ MonoBehaviour:
   _offsetColor: {r: 0.25031152, g: 0.7075472, b: 0.38233382, a: 1}
   _sr: {fileID: 8422439901307920167}
   highlight: {fileID: 1697667538439667331}
-  isInside: 0
+  tileType: 0
 --- !u!61 &4475795297245820631
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -217,7 +217,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
