@@ -1,9 +1,11 @@
 using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 public class OpenMinigame : MonoBehaviour
 {
@@ -12,6 +14,12 @@ public class OpenMinigame : MonoBehaviour
     //private bool stop = false;
     private string StandingName = "";
     public GameObject[] Helps;
+    public GameObject FinalCutScene;
+
+    public VideoClip vp;
+
+    private float videoTimer = 0;
+    private bool end = false;
 
     private void Start()
     {
@@ -28,8 +36,22 @@ public class OpenMinigame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        if (Input.GetKeyDown(KeyCode.Space) && StandObject)
+
+        if (end)
+        {
+            videoTimer += Time.deltaTime;
+        }
+
+        if(videoTimer >= vp.length + 3d && end)
+        {
+            Debug.Log(PolicePoints.Police_Point);
+            
+            
+            SceneManager.LoadScene(0);
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space) && StandObject && !end)
         {
             //Debug.Log(StandingName);
             switch (StandingName)
@@ -41,7 +63,9 @@ public class OpenMinigame : MonoBehaviour
                     }
                     else
                     {
-                        //VégeCutscene
+                        PolicePoints.Clear();
+                        end = true;
+                        FinalCutScene.SetActive(true);//VégeCutscene
                     }
                     break;
                 case "Hospital":

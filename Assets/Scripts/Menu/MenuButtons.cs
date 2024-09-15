@@ -3,30 +3,24 @@ using System.Collections.Generic;
 using UnityEditor.ShortcutManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MenuButtons : MonoBehaviour
 {
     public GameObject menu;
     public GameObject makers;
-    public GameObject notImplemented;
-
-    private GameObject lastOpened;
-    private GameObject current;
-
-    private void Start()
-    {
-       lastOpened = menu;
-       current = menu;
-    }
+    public Button button;
+    public Sprite img;
 
     public void gameStart()
     {   
-        notImplemented.SetActive(true);
-        //SceneManager.LoadScene(1);
+        
+        SceneManager.LoadScene(1);
     }
     public void Makers()
     {
-        Switch(menu, makers);
+        makers.SetActive(true);
+        menu.SetActive(false);
     }
 
     public void Exit()
@@ -34,25 +28,11 @@ public class MenuButtons : MonoBehaviour
         Application.Quit();
     }
     
-    public void Back()
+    public void BackToMenu()
     {
-        GameObject temp = current;
-        lastOpened.SetActive(true);
-        current.SetActive(false);
-        current = lastOpened;
-        lastOpened = temp;
+        makers.SetActive(false);
+        menu.SetActive(true);
+        button.image.sprite = img;
     }
 
-    public void back2()
-    {
-        notImplemented.SetActive(false);
-    }
-
-    public void Switch(GameObject prev, GameObject next)
-    {
-        lastOpened = prev;
-        current = next;
-        prev.SetActive(false);
-        next.SetActive(true);
-    }
 }
